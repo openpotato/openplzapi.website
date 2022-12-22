@@ -131,7 +131,7 @@ Hier eine Beispielabfrage für die deutsche Straße *Grabbeallee* (gibt es nur e
     curl -X GET 'https://openplzapi.org/de/Streets?name=Grabbeallee' -H 'accept: text/json' | json_pp
     ```
 
-Hier eine Beispielabfrage für alle Straßen in Berlin, die mit *G* anfängt und mit *allee* aufhört. Der reguläre Ausruck `^G.*allee$` ist URL-kodiert: 
+Hier eine Beispielabfrage für alle Straßen in Berlin, die mit *G* anfängt und mit *allee* aufhört. Der reguläre Ausruck `^G.*allee$` ist [URL-kodiert](https://emn178.github.io/online-tools/url_encode.html): 
 
 === "Powershell 7"
 
@@ -144,6 +144,7 @@ Hier eine Beispielabfrage für alle Straßen in Berlin, die mit *G* anfängt und
     ``` bash
     curl -X GET 'https://openplzapi.org/de/Streets?name=%5EG.*allee%24&locality=Berlin' -H 'accept: text/json' | json_pp
     ```
+	
 Straßenabfragen unterliegen einer Pagination, d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 Hier das erste Beispiel mit expliziter Pagination (zweite Seite mit maximal 20 Straßen): 
