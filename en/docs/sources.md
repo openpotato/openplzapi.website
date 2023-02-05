@@ -4,7 +4,7 @@ The data basis for **OpenPLZ API** is completely based on public sources of the 
 
 ### Municipality directory
 
-The [Federal Statistical Office (Destatis)](https://www.destatis.de) provides the *Gemeindeleitdatei GV100* for download. This file contains information on all regional units of Germany (federal states, administrative districts, counties, associations of municipalities and municipalities). The GV100 file is a text file with a fixed record structure of 220 digits that is updated monthly.
+The [Federal Statistical Office (Destatis)](https://www.destatis.de) provides the *Gemeindeleitdatei GV100* for download. This file contains information on all regional units of Germany (federal states, administrative districts, counties, associations of municipalities and municipalities). The GV100 file is a text file with a fixed record structure of 220 digits that is updated regularly.
 
 Source:
 
@@ -24,7 +24,7 @@ Source:
 
 ### Municipality directory
 
-The [Bundesanstalt Statistik Österreich (STATISTIK AUSTRIA)](https://www.statistik.at/en) provides downloads for regional breakdown.
+The [Bundesanstalt Statistik Österreich (STATISTIK AUSTRIA)](https://www.statistik.at/en/) provides downloads for regional breakdown.
 
 Sources:
 
@@ -33,7 +33,7 @@ Sources:
 
 ### Street directory
 
-The [Bundesanstalt Statistik Österreich (STATISTIK AUSTRIA)](https://www.statistik.at/en) also provides the complete street directory, updated weekly.
+The [Bundesanstalt Statistik Österreich (STATISTIK AUSTRIA)](https://www.statistik.at/en/) also provides the complete street directory, updated weekly.
 
 Source:
 
@@ -51,9 +51,9 @@ Source:
 
 ### Street directory
 
-The [Swiss cadastral system](https://www.cadastre.ch/en/home.html) provides the complete, regularly updated street directory.
+The [Federal Office of Topography](https://www.swisstopo.admin.ch/en/home.html) provides the complete, regularly updated street directory.
 
 Source:
 
-+ [Street directory](https://www.cadastre.ch/de/services/service/registry/street.html)
++ [Street directory](https://www.swisstopo.admin.ch/en/geodata/official-geographic-directories/street-directory.html)
 

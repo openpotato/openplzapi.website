@@ -4,7 +4,7 @@ Die Datengrundlage für **OpenPLZ API** basiert komplett auf öffentlichen Quell
 
 ### Gemeindeverzeichnis
 
-Das [Statistische Bundesamt (Destatis)](https://www.destatis.de) stellt die *Gemeindeleitdatei GV100* zum Download bereit. Diese Datei enthält Informationen zu allen Regionaleinheiten Deutschlands (Bundesländer, Regierungsbezirke, Kreise, Gemeindeverbände und Gemeinden). Die Gemeindeleitdatei GV100 ist eine Textdatei mit einer festen Satzstruktur von 220 Stellen, die monatlich aktualisiert wird.
+Das [Statistische Bundesamt (Destatis)](https://www.destatis.de) stellt die *Gemeindeleitdatei GV100* zum Download bereit. Diese Datei enthält Informationen zu allen Regionaleinheiten Deutschlands (Bundesländer, Regierungsbezirke, Kreise, Gemeindeverbände und Gemeinden). Die Gemeindeleitdatei GV100 ist eine Textdatei mit einer festen Satzstruktur von 220 Stellen, die regelmäßig aktualisiert wird.
 
 Quelle:
 
@@ -51,8 +51,8 @@ Quelle:
 
 ### Straßenverzeichnis
 
-Das [schweizerische Katastersystem](https://www.cadastre.ch) stellt das das komplette, regelmäßig aktualisierte Straßenverzeichnis bereit.
+Das [Bundesamt für Landestopografie](https://www.swisstopo.admin.ch/de/home.html) stellt das komplette, regelmäßig aktualisierte Straßenverzeichnis bereit.
 
 Quelle:
 
-+ [Straßenverzeichnis](https://www.cadastre.ch/de/services/service/registry/street.html)
++ [Straßenverzeichnis](https://www.swisstopo.admin.ch/de/geodata/amtliche-verzeichnisse/strassenverzeichnis.html)
