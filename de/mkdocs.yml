@@ -6,7 +6,7 @@ site_url: 'https://www.openplzapi.org/'
 
 # Copyright
 copyright: 
-  '&copy; 2022 STÜBER SYSTEMS GmbH : <a href="https://www.stueber.de/imprint.php">Impressum</a> : <a href="https://legal.stueber.de/privacy.php">Datenschutz</a>'
+  '&copy; 2023 STÜBER SYSTEMS GmbH : <a href="https://legal.stueber.de/imprint.php">Impressum</a> : <a href="https://legal.stueber.de/privacy.php">Datenschutz</a>'
 
 # Repository
 repo_name: 'Auf GitHub'
@@ -40,8 +40,13 @@ theme:
   static_templates:
     - 404.html
 
-# Multi language
+# Social media & multi language
 extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fosstodon.org/@openpotato
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/openpotatis
   alternate:
     - name: English
       link: /en/
