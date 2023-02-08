@@ -13,7 +13,7 @@ Switzerland | Street directory       | 2023-02-04
 
 ## OpenPLZ API Service
 
-### 0.0.2 <small>_ January 05, 2023</small>
+### 0.0.2 <small>_ February 05, 2023</small>
 
 - Breaking API change: `Street` entities and `Locality` entities now contain more detailed information on municipalities, districts and federal states or cantons.
 - Added CORS support

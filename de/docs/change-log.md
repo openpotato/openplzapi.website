@@ -13,7 +13,7 @@ Schweiz     | Straßenverzeichnis  | 04.02.2023
 
 ## OpenPLZ API Service
 
-### 0.0.2 <small>_ 05. Januar 2023</small>
+### 0.0.2 <small>_ 05. Februar 2023</small>
 
 - Breaking API change: `Street`-Entitäten und `Locality`-Entitäten enthalten jetzt ausführlichere Angaben zu Gemeinden, Kreisen, Bezirken und Bundesländern bzw. Kantonen.
 - CORS-Unterstützung hinzugefügt
