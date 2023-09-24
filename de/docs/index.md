@@ -97,7 +97,7 @@ Hier eine Beispielabfrage für alle deutschen Postleitzahlen, die mit *13* begin
     curl -X GET 'https://openplzapi.org/de/Localities?postalCode=^13' -H 'accept: text/json' | json_pp
     ```
 
-Orstabfragen unterliegen einer Pagination, d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Orte zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Ortsabfragen unterliegen einer Pagination, d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Orte zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 Hier das erste Beispiel mit expliziter Pagination (zweite Seite mit maximal 20 Orte): 
 

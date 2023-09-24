@@ -47,7 +47,7 @@ theme:
 # Social media & multi language
 extra:
   social:
-    - icon: fontawesome/brands/mastodon 
+    - icon: fontawesome/brands/mastodon
       link: https://fosstodon.org/@openpotato
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/openpotatis
@@ -71,6 +71,7 @@ plugins:
 # Extensions
 markdown_extensions:
   - admonition
+  - attr_list
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
