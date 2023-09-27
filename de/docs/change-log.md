@@ -4,14 +4,20 @@ Der aktuelle Datenbestand (siehe auch [Datenquellen](sources.md)):
 
 Land        | Datenquelle         | Veröffentlichung
 ------------|---------------------|-----------------
-Deutschland | Gemeindeverzeichnis | Oktober 2022
-Deutschland | Straßenverzeichnis  | 08.12.2022
-Österreich  | Gemeindeverzeichnis | 02.02.2023
-Österreich  | Straßenverzeichnis  | 02.02.2023
-Schweiz     | Gemeindeverzeichnis | 15.12.2022
-Schweiz     | Straßenverzeichnis  | 04.02.2023
+Deutschland | Gemeindeverzeichnis | Juli 2023
+Deutschland | Straßenverzeichnis  | 26.09.2023
+Österreich  | Gemeindeverzeichnis | 21.09.2023
+Österreich  | Straßenverzeichnis  | 21.09.2023
+Schweiz     | Gemeindeverzeichnis | 01.01.2023
+Schweiz     | Straßenverzeichnis  | 22.09.2023
 
 ## OpenPLZ API Service
+
+### 0.0.3 <small>_ 27. September 2023</small>
+
+- CSV als zusätzliches Ausgabeformat
+- Aktualisierung der Datenquellen
+- Fehlerkorrekturen
 
 ### 0.0.2 <small>_ 05. Februar 2023</small>
 
