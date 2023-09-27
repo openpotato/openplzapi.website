@@ -113,7 +113,7 @@ Here is the first example with explicit pagination (second page with a maximum o
     curl -X GET 'https://openplzapi.org/de/Localities?postalCode=13156&page=2&pageSize=20' -H 'accept: text/json' | json_pp
     ```
 
-### Straßen
+### Streets
 
 Streets can be searched by name, postal code or locality name. The search can be designed very flexibly using regular expressions. The [POSIX Regular Expressions Syntax](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) is supported.
 
