@@ -12,7 +12,7 @@ Quelle:
 
 ### Straßenverzeichnis
 
-In Deutschland gibt es keine frei zugängliche Datenbank, um alle Postleitzahlen und/oder Straßennamen Deutschlands zu erhalten. Es gibt zwar kommerzielle Dienste, die derartige Daten anbieten, aber diese kosten Geld und dürfen nicht im Sinne von Open Data werden. 
+In Deutschland gibt es keine frei zugängliche Datenbank, um alle Postleitzahlen und/oder Straßennamen Deutschlands zu erhalten. Es gibt zwar kommerzielle Dienste, die derartige Daten anbieten, aber diese kosten Geld und dürfen nicht im Sinne von Open Data verwendet werden. 
 
 Als Alternative bietet sich das gemeinschaftlich betriebene [OpenStreetMap-Projekt](https://www.openstreetmap.org/) an. Jede Woche wird eine neue und vollständige Kopie aller Daten in OpenStreetMap sowohl als komprimierte XML-Datei als auch im [PBF-Format (Protocolbuffer Binary Format)](https://wiki.openstreetmap.org/wiki/PBF_Format) zur Verfügung gestellt. Alle Infos dazu finden sich unter [Planet OSM](https://planet.openstreetmap.org). Die Datenbankdatei ist sehr groß, daher arbeitet OpenPLZ API mit einem regionalen Auszug für Deutschland. Die Straßen werden mit allen relevanten Informationen aus den OpenStreetMap-Daten extrahiert und mit den Daten aus dem GV-ISys verknüpft. Das Ergebnis ist eine CSV-Datei, die ihren Platz [im folgenden GitHub-Repo](https://github.com/openpotato/openplzapi.data) bekommen hat und regelmäßig aktualisiert wird.
 
