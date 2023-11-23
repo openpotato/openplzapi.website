@@ -13,6 +13,13 @@ Switzerland | Street directory       | 2023-09-22
 
 ## OpenPLZ API Service
 
+### 0.0.4 <small>_ November 23, 2023</small>
+
+- New API endpoints for `Locality` entities
+- Paging for nearly all API endpoints
+- Update to .NET 8
+- Bug fixes
+
 ### 0.0.3 <small>_ September 27, 2023</small>
 
 - CSV as additional output format

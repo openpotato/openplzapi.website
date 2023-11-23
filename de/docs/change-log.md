@@ -13,6 +13,13 @@ Schweiz     | Straßenverzeichnis  | 22.09.2023
 
 ## OpenPLZ API Service
 
+### 0.0.4 <small>_ 23. November 2023</small>
+
+- Neue API-Endpunkte für `Locality`-Entitäten
+- Paging für fast alle API-Endpunkte
+- Update auf .NET 8
+- Fehlerkorrekturen
+
 ### 0.0.3 <small>_ 27. September 2023</small>
 
 - CSV als zusätzliches Ausgabeformat
