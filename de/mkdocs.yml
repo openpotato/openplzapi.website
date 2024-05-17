@@ -6,7 +6,7 @@ site_url: 'https://www.openplzapi.org/'
 
 # Copyright
 copyright: 
-  '&copy; 2023 STÜBER SYSTEMS GmbH : <a href="https://legal.stueber.de/imprint.php">Impressum</a> : <a href="https://legal.stueber.de/privacy.php">Datenschutz</a>'
+  '&copy; 2024 STÜBER SYSTEMS GmbH : <a href="https://legal.stueber.de/imprint.php">Impressum</a> : <a href="https://legal.stueber.de/privacy.php">Datenschutz</a>'
 
 # Repository
 repo_name: 'Auf GitHub'
@@ -81,5 +81,6 @@ markdown_extensions:
 nav:
   - Einführung: index.md
   - Datenquellen: sources.md
+  - Community: community.md
   - Änderungslog: change-log.md
   - API: api.md
