@@ -1,6 +1,6 @@
 # Community
 
-OpenPLZ API is open data, the infrastructure is open source. A project like this lives from the users who use it. We welcome feedback and help of any kind:
+OpenPLZ API ist Open Data, die Infrastruktur Open Source. Ein Projekt wie dieses lebt von den Nutzern, die es nutzen. Wie freuen uns über Feedback und Hilfe jeglicher Art:
 
 + Ein Frage oder Meldung im [GitHub Issue Tracker](https://github.com/openpotato/openplzapi/issues) erstellen.
 + Eine Diskussion unter [GitHub Discussions](https://github.com/openpotato/openplzapi.website/discussions) starten.
