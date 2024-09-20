@@ -47,7 +47,7 @@ The [Federal Statistical Office](https://www.bfs.admin.ch/bfs/en/home.html) prov
 
 Source:
 
-+ [Municipal directory (including districts and cantons)](https://www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html)
++ [Municipal directory (including districts and cantons)](https://www.bfs.admin.ch/asset/de/31265302)
 
 ### Street directory
 
@@ -55,5 +55,23 @@ The [Federal Office of Topography](https://www.swisstopo.admin.ch/en/home.html) 
 
 Source:
 
-+ [Street directory](https://www.swisstopo.admin.ch/en/geodata/official-geographic-directories/street-directory.html)
++ [Street directory](https://www.swisstopo.admin.ch/de/geodata/amtliche-verzeichnisse/strassenverzeichnis.html)
 
+## Liechtenstein
+
+### Municipal directory
+
+The list of municipalities is based on the Liechtenstein Municipalities Act of 20 March 1996.
+
+Sources:
+
++ [Gemeindegesetz (GemG)](https://www.gesetze.li/konso/1996076000)
++ [Wikipedia: Verwaltungsgliederung Liechtensteins](https://w.wiki/BEPn)
+
+### Straßenverzeichnis
+
+The [Swiss Federal Office of Topography](https://www.swisstopo.admin.ch/en/home.html) also provides the complete, regularly updated street directory for Liechtenstein.
+
+Source:
+
++ [Street directory](https://www.swisstopo.admin.ch/de/geodata/amtliche-verzeichnisse/strassenverzeichnis.html)

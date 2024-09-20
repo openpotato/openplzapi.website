@@ -2,16 +2,24 @@
 
 Der aktuelle Datenbestand (siehe auch [Datenquellen](sources.md)):
 
-Land        | Datenquelle         | Veröffentlichung
-------------|---------------------|-----------------
-Deutschland | Gemeindeverzeichnis | Juli 2023
-Deutschland | Straßenverzeichnis  | 26.09.2023
-Österreich  | Gemeindeverzeichnis | 21.09.2023
-Österreich  | Straßenverzeichnis  | 21.09.2023
-Schweiz     | Gemeindeverzeichnis | 01.01.2023
-Schweiz     | Straßenverzeichnis  | 22.09.2023
+Land                    | Datenquelle         | Veröffentlichung
+------------------------|---------------------|-----------------
+:flag_de: Deutschland   | Gemeindeverzeichnis | Juli 2024
+:flag_de: Deutschland   | Straßenverzeichnis  | 17.09.2024
+:flag_at: Österreich    | Gemeindeverzeichnis | 12.09.2024
+:flag_at: Österreich    | Straßenverzeichnis  | 12.09.2024
+:flag_ch: Schweiz       | Gemeindeverzeichnis | 01.03.2024
+:flag_ch: Schweiz       | Straßenverzeichnis  | 18.09.2024
+:flag_li: Liechtenstein | Gemeindeverzeichnis | März 1996
+:flag_li: Liechtenstein | Straßenverzeichnis  | 18.09.2024
 
 ## OpenPLZ API Service
+
+### 0.0.5 <small>_ 20. September 2024</small>
+
+- API change: `Street`-Entitäten für Deutschland enthalten jetzt zusätzliche Angaben zu Stadtbezirk (Borough) und/oder Stadtteil (Suburb) (soweit in OpenStreetMap vorhanden)
+- Support für Straßen und Postleitzahlen aus Liechtenstein
+- Fehlerkorrekturen und Refactoring
 
 ### 0.0.4 <small>_ 23. November 2023</small>
 

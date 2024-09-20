@@ -1,4 +1,4 @@
-**OpenPLZ API** is a small [Open Data project](https://opendatahandbook.org/guide/de/what-is-open-data/) that makes a public street directory for Germany, Austria and Switzerland available via an open REST API interface. The following data can be retrieved:
+**OpenPLZ API** is a small [Open Data project](https://opendatahandbook.org/guide/de/what-is-open-data/) that makes a public street directory for :flag_de: Germany, :flag_at: Austria, :flag_ch: Switzerland and :flag_li: Liechtenstein available via an open REST API interface. The following data can be retrieved:
 
 + Germany: 
     + Street name 
@@ -12,8 +12,12 @@
     + Street name 
     + Postal code and locality 
     + Municipality (including details of district and canton)
++ Liechtenstein:
+    + Street name 
+    + Postal code and locality 
+    + Municipality
 
-## Lets's start
+## Let's start
 
 The easiest way to use the API is via the command line. We will work with the command line application [curl](https://curl.se/) in this chapter. 
 

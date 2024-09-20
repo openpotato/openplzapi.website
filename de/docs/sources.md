@@ -47,11 +47,30 @@ Das [Bundesamt für Statistik](https://www.bfs.admin.ch) stellt Downloads zur re
 
 Quelle:
 
-+ [Gemeindeverzeichnis (inklusive Bezirke und Kantone)](https://www.bfs.admin.ch/bfs/de/home/grundlagen/agvch.html)
++ [Gemeindeverzeichnis (inklusive Bezirke und Kantone)](https://www.bfs.admin.ch/asset/de/31265302)
 
 ### Straßenverzeichnis
 
 Das [Bundesamt für Landestopografie](https://www.swisstopo.admin.ch/de/home.html) stellt das komplette, regelmäßig aktualisierte Straßenverzeichnis bereit.
+
+Quelle:
+
++ [Straßenverzeichnis](https://www.swisstopo.admin.ch/de/geodata/amtliche-verzeichnisse/strassenverzeichnis.html)
+
+## Liechtenstein
+
+### Gemeindeverzeichnis
+
+Die Liste der Gemeinden ergibt sich aus dem Liechtensteiner Gemeindegesetz vom 20. März 1996.
+
+Quellen:
+
++ [Gemeindegesetz (GemG)](https://www.gesetze.li/konso/1996076000)
++ [Wikipedia: Verwaltungsgliederung Liechtensteins](https://w.wiki/BEPn)
+
+### Straßenverzeichnis
+
+Das [Schweizer Bundesamt für Landestopografie](https://www.swisstopo.admin.ch/de/home.html) stellt das komplette, regelmäßig aktualisierte Straßenverzeichnis auch für Liechtenstein bereit.
 
 Quelle:
 

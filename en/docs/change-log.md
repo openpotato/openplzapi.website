@@ -2,16 +2,24 @@
 
 The current dataset (see also [data sources](sources.md)):
 
-Country     | Data source            | Release
-------------|------------------------|--------
-Germany     | Municipality directory | July 2023
-Germany     | Street directory       | 2023-09-26
-Austria     | Municipality directory | 2023-09-21
-Austria     | Street directory       | 2023-09-21
-Switzerland | Municipality directory | 2023-01-01
-Switzerland | Street directory       | 2023-09-22
+Country                 | Data source            | Release
+------------------------|------------------------|--------
+:flag_de: Germany       | Municipality directory | July 2024
+:flag_de: Germany       | Street directory       | 2024-09-17
+:flag_at: Austria       | Municipality directory | 2024-09-12
+:flag_at: Austria       | Street directory       | 2024-09-12
+:flag_ch: Switzerland   | Municipality directory | 2024-03-01
+:flag_ch: Switzerland   | Street directory       | 2024-09-18
+:flag_li: Liechtenstein | Gemeindeverzeichnis    | März 1996
+:flag_li: Liechtenstein | Straßenverzeichnis     | 2024-09-18
 
 ## OpenPLZ API Service
+
+### 0.0.5 <small>_ September 20, 2024</small>
+
+- API change: Street entities for Germany now contain additional information on borough and/or suburb (if available in OpenStreetMap)
+- Added support for streets and postal codes from Liechtenstein
+- Bug fixes and refactoring
 
 ### 0.0.4 <small>_ November 23, 2023</small>
 
