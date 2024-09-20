@@ -10,8 +10,8 @@ Country                 | Data source            | Release
 :flag_at: Austria       | Street directory       | 2024-09-12
 :flag_ch: Switzerland   | Municipality directory | 2024-03-01
 :flag_ch: Switzerland   | Street directory       | 2024-09-18
-:flag_li: Liechtenstein | Gemeindeverzeichnis    | März 1996
-:flag_li: Liechtenstein | Straßenverzeichnis     | 2024-09-18
+:flag_li: Liechtenstein | Municipality directory | March 1996
+:flag_li: Liechtenstein | Street directory       | 2024-09-18
 
 ## OpenPLZ API Service
 
