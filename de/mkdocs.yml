@@ -84,6 +84,10 @@ markdown_extensions:
 nav:
   - Einführung: index.md
   - Datenquellen: sources.md
+  - Paging: paging.md
+  - Reguläre Ausdrücke: regex.md
+  - Volltextsuche: fulltextsearch.md
   - Community: community.md
   - Änderungslog: change-log.md
+  - FAQ: faq.md
   - API: api.md

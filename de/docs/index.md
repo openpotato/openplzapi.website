@@ -1,21 +1,28 @@
-**OpenPLZ API** ist ein kleines [Open Data-Projekt](https://opendatahandbook.org/guide/de/what-is-open-data/), das ein öffentliches Strassenverzeichnis für :flag_de: Deutschland, :flag_at: Österreich, :flag_ch: die Schweiz und :flag_li: Liechtenstein über eine offene REST-API-Schnittstelle verfügbar macht. Folgende Daten sind abrufbar:
+**OpenPLZ API** ist ein [Open Data-Projekt](https://opendatahandbook.org/guide/de/what-is-open-data/), das ein öffentliches Strassenverzeichnis für Deutschland, Österreich, die Schweiz und Liechtenstein über eine offene REST-API-Schnittstelle verfügbar macht. Folgende Daten sind abrufbar:
 
-+ Deutschland: 
-    + Straßenname 
-    + Postleitzahl und Ort
-    + Gemeinde (inklusive Angaben zu Kreis, Bezirk und Bundesland)
-+ Österreich: 
-    + Straßenname 
-    + Postleitzahl und Ort
-    + Gemeinde (inklusive Angaben zu Bezirk und Bundesland)
-+ Schweiz: 
-    + Straßenname 
-    + Postleitzahl und Ort
-    + Gemeinde (inklusive Angaben zu Bezirk und Kanton)
-+ Liechtenstein: 
-    + Straßenname 
-    + Postleitzahl und Ort
-    + Gemeinde
+**:flag_de: Deutschland:**
+
++ Straßenname 
++ Postleitzahl und Ort
++ Gemeinde (inklusive Angaben zu Kreis, Bezirk und Bundesland)
+
+**:flag_at: Österreich:**
+
++ Straßenname 
++ Postleitzahl und Ort
++ Gemeinde (inklusive Angaben zu Bezirk und Bundesland)
+
+**:flag_ch: Schweiz:** 
+
++ Straßenname 
++ Postleitzahl und Ort
++ Gemeinde (inklusive Angaben zu Bezirk und Kanton)
+
+**:flag_li: Liechtenstein:** 
+
++ Straßenname 
++ Postleitzahl und Ort
++ Gemeinde
 
 ## Los geht's
 
@@ -69,9 +76,11 @@ Hier eine Beispielabfrage für die Liste aller schweizerischen Bezirke im Kanton
     curl -X GET 'https://openplzapi.org/ch/Cantons/19/Districts' -H 'accept: text/json' | json_pp
     ```
 
+Die meisten Abfragen Verwaltungseinheiten unterliegen eine [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Einträgen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+
 ### Postleitzahlen und Orte
 
-Orte können an Hand ihres Namens oder ihrer Postleitzahl gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) unterstützt.
+Orte können an Hand ihres Namens oder ihrer Postleitzahl gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](/regex) unterstützt.
 
 Hier eine Beispielabfrage für die deutsche Postleitzahl *13156*: 
 
@@ -101,9 +110,9 @@ Hier eine Beispielabfrage für alle deutschen Postleitzahlen, die mit *13* begin
     curl -X GET 'https://openplzapi.org/de/Localities?postalCode=^13' -H 'accept: text/json' | json_pp
     ```
 
-Ortsabfragen unterliegen einer Pagination, d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Orte zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Ortsabfragen unterliegen einem [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Orte zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
-Hier das erste Beispiel mit expliziter Pagination (zweite Seite mit maximal 20 Orte): 
+Hier das erste Beispiel mit explizitem Paging (zweite Seite mit maximal 20 Orte): 
 
 === "Powershell 7"
 
@@ -119,7 +128,7 @@ Hier das erste Beispiel mit expliziter Pagination (zweite Seite mit maximal 20 O
 
 ### Straßen
 
-Straßen können an Hand ihres Namens, ihrer Postleitzahl oder ihres Ortsnamens gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions) unterstützt.
+Straßen können an Hand ihres Namens, ihrer Postleitzahl oder ihres Ortsnamens gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](/regex) unterstützt.
 
 Hier eine Beispielabfrage für die deutsche Straße *Grabbeallee* (gibt es nur einmal in Berlin): 
 
@@ -149,9 +158,9 @@ Hier eine Beispielabfrage für alle Straßen in Berlin, die mit *G* anfängt und
     curl -X GET 'https://openplzapi.org/de/Streets?name=%5EG.*allee%24&locality=Berlin' -H 'accept: text/json' | json_pp
     ```
 	
-Straßenabfragen unterliegen einer Pagination, d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Straßenabfragen unterliegen einem [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
-Hier das erste Beispiel mit expliziter Pagination (zweite Seite mit maximal 20 Straßen): 
+Hier das erste Beispiel mit explizitem Paging (zweite Seite mit maximal 20 Straßen): 
 
 === "Powershell 7"
 
@@ -164,6 +173,40 @@ Hier das erste Beispiel mit expliziter Pagination (zweite Seite mit maximal 20 S
     ``` bash
     curl -X GET 'https://openplzapi.org/de/Streets?name=Grabbeallee&page=2&pageSize=20' -H 'accept: text/json' | json_pp
     ```
+
+### Volltextsuche
+
+Für jedes Land kann eine [Volltextsuche](/fulltextsearch) über Straßenname, Postleitzahl und Ortsname durchgeführt werden.
+
+Hier eine Volltextsuche für Deutschland mit dem Suchbegriff `Berlin, Pariser Platz`. Der Suchbegriff ist [URL-kodiert](https://emn178.github.io/online-tools/url_encode.html): 
+
+=== "Powershell 7"
+
+    ``` powershell
+    curl -X GET 'https://localhost:44365/de/FullTextSearch?searchTerm=Berlin%2C%20Pariser%20Platz' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    ```
+
+=== "Bash"
+
+    ``` bash
+    curl -X GET 'https://localhost:44365/de/FullTextSearch?searchTerm=Berlin%2C%20Pariser%20Platz' -H 'accept: text/json' | json_pp
+    ```
+
+Hier eine Volltextsuche für Liechtenstein mit dem Suchbegriff `9490 Alte Landstrasse`. Der Suchbegriff ist [URL-kodiert](https://emn178.github.io/online-tools/url_encode.html): 
+
+=== "Powershell 7"
+
+    ``` powershell
+    curl -X GET 'https://localhost:44365/li/FullTextSearch?searchTerm=9490%20Alte%20Landstrasse' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    ```
+
+=== "Bash"
+
+    ``` bash
+    curl -X GET 'https://localhost:44365/li/FullTextSearch?searchTerm=9490%20Alte%20Landstrasse' -H 'accept: text/json' | json_pp
+    ```
+
+Die Volltextsuche unterliegt einem [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 ## Tipps und Tricks
 

@@ -14,7 +14,7 @@ Source:
 
 In Germany, there is no freely accessible database to obtain all postcodes and/or street names in Germany. There are commercial services that offer such data, but they cost money and may not become Open Data. 
 
-An alternative is the community-run [OpenStreetMap project](https://www.openstreetmap.org/). Every week, a new and complete copy of all data in OpenStreetMap is made available both as a compressed XML file and in [PBF format (Protocolbuffer Binary Format)](https://wiki.openstreetmap.org/wiki/PBF_Format). All info on this can be found at [https://planet.openstreetmap.org](https://planet.openstreetmap.org). The database file is very large, so OpenPLZ API works with a regional extract for Germany. The streets are extracted with all relevant information from the OpenStreetMap data and linked with the data from the GV-ISys. The result is a CSV file that has been given its place [in the following GitHub repo](https://github.com/openpotato/openplzapi.data) and is updated regularly.
+An alternative is the community-run [OpenStreetMap project](https://www.openstreetmap.org/). Every week, a new and complete copy of all data in OpenStreetMap is made available both as a compressed XML file and in [PBF format (Protocolbuffer Binary Format)](https://wiki.openstreetmap.org/wiki/PBF_Format). All info on this can be found at [Planet OSM](https://planet.openstreetmap.org). The database file is very large, so OpenPLZ API works with a regional extract for Germany. The streets are extracted with all relevant information from the OpenStreetMap data and linked with the data from the GV-ISys. The result is a CSV file that has been given its place [in the following GitHub repo](https://github.com/openpotato/openplzapi.data) and is updated regularly.
 
 Source:
 
@@ -68,7 +68,7 @@ Sources:
 + [Gemeindegesetz (GemG)](https://www.gesetze.li/konso/1996076000)
 + [Wikipedia: Verwaltungsgliederung Liechtensteins](https://w.wiki/BEPn)
 
-### Straßenverzeichnis
+### Street directory
 
 The [Swiss Federal Office of Topography](https://www.swisstopo.admin.ch/en/home.html) also provides the complete, regularly updated street directory for Liechtenstein.
 
