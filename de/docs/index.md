@@ -1,24 +1,24 @@
 **OpenPLZ API** ist ein [Open Data-Projekt](https://opendatahandbook.org/guide/de/what-is-open-data/), das ein öffentliches Strassenverzeichnis für Deutschland, Österreich, die Schweiz und Liechtenstein über eine offene REST-API-Schnittstelle verfügbar macht. Folgende Daten sind abrufbar:
 
-**:flag_de: Deutschland:**
+**:flag_de: - Deutschland:**
 
 + Straßenname 
 + Postleitzahl und Ort
 + Gemeinde (inklusive Angaben zu Kreis, Bezirk und Bundesland)
 
-**:flag_at: Österreich:**
+**:flag_at: - Österreich:**
 
 + Straßenname 
 + Postleitzahl und Ort
 + Gemeinde (inklusive Angaben zu Bezirk und Bundesland)
 
-**:flag_ch: Schweiz:** 
+**:flag_ch: - Schweiz:** 
 
 + Straßenname 
 + Postleitzahl und Ort
 + Gemeinde (inklusive Angaben zu Bezirk und Kanton)
 
-**:flag_li: Liechtenstein:** 
+**:flag_li: - Liechtenstein:** 
 
 + Straßenname 
 + Postleitzahl und Ort
