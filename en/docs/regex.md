@@ -6,7 +6,7 @@ In the OpenPLZ API, search entries for street names, postcodes or place names ca
 
 Regular expressions (often abbreviated as regex) are a text search tool. They make it possible to search for and find specific patterns in character strings. Regular expressions can be used to perform complex search operations by specifying the type of characters or text structures to be searched for.
 
-## POSIX Basic Regular Expressions (BRE)
+## POSIX Basic Regular Expressions
 
 [POSIX Basic Regular Expressions (BRE)](https://pubs.opengroup.org/onlinepubs/9799919799/) are the more traditional form of regular expressions used in Unix-like operating systems. They provide a robust and efficient way to search, match and manipulate strings. In contrast to extended regular expressions (ERE), many special characters in BRE must be escaped with a backslash (`\`) to take on their special meanings. This leads to some syntactic differences between BRE and other forms of regular expressions.
 

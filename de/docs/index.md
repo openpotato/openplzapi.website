@@ -76,11 +76,11 @@ Hier eine Beispielabfrage für die Liste aller schweizerischen Bezirke im Kanton
     curl -X GET 'https://openplzapi.org/ch/Cantons/19/Districts' -H 'accept: text/json' | json_pp
     ```
 
-Die meisten Abfragen Verwaltungseinheiten unterliegen eine [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Einträgen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Die meisten Abfragen Verwaltungseinheiten unterliegen eine [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Einträgen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 ### Postleitzahlen und Orte
 
-Orte können an Hand ihres Namens oder ihrer Postleitzahl gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](/regex) unterstützt.
+Orte können an Hand ihres Namens oder ihrer Postleitzahl gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](regex.md) unterstützt.
 
 Hier eine Beispielabfrage für die deutsche Postleitzahl *13156*: 
 
@@ -110,7 +110,7 @@ Hier eine Beispielabfrage für alle deutschen Postleitzahlen, die mit *13* begin
     curl -X GET 'https://openplzapi.org/de/Localities?postalCode=^13' -H 'accept: text/json' | json_pp
     ```
 
-Ortsabfragen unterliegen einem [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Orte zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Ortsabfragen unterliegen einem [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Orte zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 Hier das erste Beispiel mit explizitem Paging (zweite Seite mit maximal 20 Orte): 
 
@@ -128,7 +128,7 @@ Hier das erste Beispiel mit explizitem Paging (zweite Seite mit maximal 20 Orte)
 
 ### Straßen
 
-Straßen können an Hand ihres Namens, ihrer Postleitzahl oder ihres Ortsnamens gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](/regex) unterstützt.
+Straßen können an Hand ihres Namens, ihrer Postleitzahl oder ihres Ortsnamens gesucht werden. Die Suche kann sehr flexibel mittels regulären Ausdrücken gestaltet werden. Es wird der [POSIX Regular Expressions Syntax](regex.md) unterstützt.
 
 Hier eine Beispielabfrage für die deutsche Straße *Grabbeallee* (gibt es nur einmal in Berlin): 
 
@@ -158,7 +158,7 @@ Hier eine Beispielabfrage für alle Straßen in Berlin, die mit *G* anfängt und
     curl -X GET 'https://openplzapi.org/de/Streets?name=%5EG.*allee%24&locality=Berlin' -H 'accept: text/json' | json_pp
     ```
 	
-Straßenabfragen unterliegen einem [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Straßenabfragen unterliegen einem [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 Hier das erste Beispiel mit explizitem Paging (zweite Seite mit maximal 20 Straßen): 
 
@@ -176,7 +176,7 @@ Hier das erste Beispiel mit explizitem Paging (zweite Seite mit maximal 20 Stra�
 
 ### Volltextsuche
 
-Für jedes Land kann eine [Volltextsuche](/fulltextsearch) über Straßenname, Postleitzahl und Ortsname durchgeführt werden.
+Für jedes Land kann eine [Volltextsuche](fulltextsearch.md) über Straßenname, Postleitzahl und Ortsname durchgeführt werden.
 
 Hier eine Volltextsuche für Deutschland mit dem Suchbegriff `Berlin, Pariser Platz`. Der Suchbegriff ist [URL-kodiert](https://emn178.github.io/online-tools/url_encode.html): 
 
@@ -206,7 +206,7 @@ Hier eine Volltextsuche für Liechtenstein mit dem Suchbegriff `9490 Alte Landst
     curl -X GET 'https://localhost:44365/li/FullTextSearch?searchTerm=9490%20Alte%20Landstrasse' -H 'accept: text/json' | json_pp
     ```
 
-Die Volltextsuche unterliegt einem [Paging](/paging), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Die Volltextsuche unterliegt einem [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 ## Tipps und Tricks
 

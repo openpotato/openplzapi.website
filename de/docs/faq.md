@@ -4,7 +4,7 @@ Ist die OpenPLZ API wirklich kostenlos? Woher stammen die ganzen Daten? In unser
 
 ## Kann ich die OpenPLZ API kostenfrei nutzen?
 
-Ja, das OpenPLZ API-Projekt ist Open Data, die Nutzung ist kostenfrei und auch in kommerziellen Projekten erlaubt. Alle Daten stammen aus öffentlichen Quellen und sind [hier dokumentiert](/sources). Die aufbereiteten Daten sind unter der [ODC Open Database License (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE) lizenziert.
+Ja, das OpenPLZ API-Projekt ist Open Data, die Nutzung ist kostenfrei und auch in kommerziellen Projekten erlaubt. Alle Daten stammen aus öffentlichen Quellen und sind [hier dokumentiert](sources.md). Die aufbereiteten Daten sind unter der [ODC Open Database License (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE) lizenziert.
 
 ## Wo ist die OpenPLZ API gehostet?
 
@@ -12,11 +12,11 @@ Der OpenPLZ API-Webservice läuft auf einem Linux-Server, der vom deutschen Inte
 
 ## Woher stammen die Daten?
 
-Alle Daten des OpenPLZ API-Projekts stammen aus öffentlichen Quellen und sind [hier dokumentiert](/sources). Die aufbereiteten Daten stehen unter der [ODC Open Database License (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE) zur Verfügung.
+Alle Daten des OpenPLZ API-Projekts stammen aus öffentlichen Quellen und sind [hier dokumentiert](sources.md). Die aufbereiteten Daten stehen unter der [ODC Open Database License (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE) zur Verfügung.
 
 ## Wie oft wird aktualisiert?
 
-Die Daten des OpenPLZ API-Projekts werden regelmäßig aktualisiert. Zur Zeit streben wir eine vierteljährliche Aktualisierung an. Der aktuelle Stand der Daten wird stets im [Änderungslog](/change-log) dokumentiert.
+Die Daten des OpenPLZ API-Projekts werden regelmäßig aktualisiert. Zur Zeit streben wir eine vierteljährliche Aktualisierung an. Der aktuelle Stand der Daten wird stets im [Änderungslog](change-log.md) dokumentiert.
 
 ## Ich habe einen Fehler gefunden!
 

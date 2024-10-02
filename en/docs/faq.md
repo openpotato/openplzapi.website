@@ -4,7 +4,7 @@ Is the OpenPLZ API really free? Where does all the data come from? In our FAQ yo
 
 ## Can I use the OpenPLZ API free of charge?
 
-Yes, the OpenPLZ API project is open data, its use is free of charge and also permitted in commercial projects. All data comes from public sources and is documented [here](/sources). The processed data is licensed under the [ODC Open Database Licence (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE).
+Yes, the OpenPLZ API project is open data, its use is free of charge and also permitted in commercial projects. All data comes from public sources and is documented [here](sources.md). The processed data is licensed under the [ODC Open Database Licence (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE).
 
 ## Where is the OpenPLZ API hosted?
 
@@ -12,11 +12,11 @@ The OpenPLZ API web service runs on a Linux server operated by the German intern
 
 ## Where does the data come from?
 
-All data from the OpenPLZ API project comes from public sources and is documented [here](/sources). The processed data is available under the [ODC Open Database Licence (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE).
+All data from the OpenPLZ API project comes from public sources and is documented [here](sources.md). The processed data is available under the [ODC Open Database Licence (ODbL)](https://raw.githubusercontent.com/openpotato/openplzapi.data/refs/heads/main/LICENSE).
 
 ## How often is the data updated?
 
-The data of the OpenPLZ API project is updated regularly. We are currently aiming for quarterly updates. The current status of the data is always documented in the [change log](/change-log).
+The data of the OpenPLZ API project is updated regularly. We are currently aiming for quarterly updates. The current status of the data is always documented in the [change log](change-log.md).
 
 ## I have found an error!
 

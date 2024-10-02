@@ -6,7 +6,7 @@ In der OpenPLZ API können Sucheingaben zu Straßennamen, Postleitzahlen oder Or
 
 Reguläre Ausdrücke (englisch: Regular Expressions, oft abgekürzt als Regex) sind ein Werkzeug zur Textsuche. Sie ermöglichen es, bestimmte Muster in Zeichenketten zu suchen und zu finden. Mit regulären Ausdrücken können komplexe Suchoperationen durchgeführt werden, indem man festlegt, welche Art von Zeichen oder Textstrukturen gesucht werden sollen.
 
-## POSIX-Basisreguläre Ausdrücke (BRE)
+## POSIX-Basisreguläre Ausdrücke
 
 [POSIX-Basisreguläre Ausdrücke (BRE)](https://pubs.opengroup.org/onlinepubs/9799919799/) sind die traditionellere Form von regulären Ausdrücken, die in Unix-ähnlichen Betriebssystemen verwendet werden. Sie bieten eine robuste und effiziente Möglichkeit, Zeichenfolgen zu durchsuchen, abzugleichen und zu manipulieren. Im Gegensatz zu erweiterten regulären Ausdrücken (ERE) müssen viele Sonderzeichen in BRE mit einem Rückwärtsschrägstrich (`\`) maskiert werden, um ihre speziellen Bedeutungen anzunehmen. Dies führt zu einigen syntaktischen Unterschieden zwischen BRE und anderen Formen regulärer Ausdrücke.
 
