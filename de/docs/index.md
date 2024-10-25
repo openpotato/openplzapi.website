@@ -76,7 +76,7 @@ Hier eine Beispielabfrage für die Liste aller schweizerischen Bezirke im Kanton
     curl -X GET 'https://openplzapi.org/ch/Cantons/19/Districts' -H 'accept: text/json' | json_pp
     ```
 
-Die meisten Abfragen Verwaltungseinheiten unterliegen eine [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Einträgen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
+Die meisten Abfragen Verwaltungseinheiten unterliegen einem [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Einträgen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
 
 ### Postleitzahlen und Orte
 

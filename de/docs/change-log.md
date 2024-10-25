@@ -34,7 +34,7 @@ Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann
 
 ### 0.0.5 <small>_ 20. September 2024</small>
 
-**Added: **
+**Added:**
 
 + `Street`-Entitäten für Deutschland enthalten jetzt zusätzliche Angaben zu Stadtbezirk (Borough) und/oder Stadtteil (Suburb) (soweit in OpenStreetMap vorhanden).
 + Support für Straßen und Postleitzahlen aus Liechtenstein.
