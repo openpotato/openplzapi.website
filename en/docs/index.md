@@ -87,13 +87,13 @@ Here is an example request for the German postal code *13156*:
 === "Powershell 7"
 
     ``` powershell
-    curl -X GET 'https://openplzapi.org/de/Localities?postalCodePattern=13156' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=13156' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
     ```
 
 === "Bash"
 
     ``` bash
-    curl -X GET 'https://openplzapi.org/de/Localities?postalCodePattern=13156' -H 'accept: text/json' | json_pp
+    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=13156' -H 'accept: text/json' | json_pp
     ```
 
 Here is an example request for all German postal codes beginning with *13*:  
@@ -101,13 +101,13 @@ Here is an example request for all German postal codes beginning with *13*:
 === "Powershell 7"
 
     ``` powershell
-    curl -X GET 'https://openplzapi.org/de/Localities?postalCodePattern=^13' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=^13' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
     ```
 
 === "Bash"
 
     ``` bash
-    curl -X GET 'https://openplzapi.org/de/Localities?postalCodePattern=^13' -H 'accept: text/json' | json_pp
+    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=^13' -H 'accept: text/json' | json_pp
     ```
 
 Queries for localities are subject to [Paging](paging.md), i.e. the result is returned in addressable data blocks. By default, only the first block or the first page with a maximum of 50 localities is returned. However, this can be influenced by specifying the optional parameters `page` and `pageSize`. 
