@@ -135,13 +135,13 @@ Here is an example request for the German street *Grabbeallee* (exists only once
 === "Powershell 7"
 
     ``` powershell
-    curl -X GET 'https://openplzapi.org/de/Streets?namePattern=Grabbeallee' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    curl -X GET 'https://openplzapi.org/de/Streets?name=Grabbeallee' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
     ```
 
 === "Bash"
 
     ``` bash
-    curl -X GET 'https://openplzapi.org/de/Streets?namePattern=Grabbeallee' -H 'accept: text/json' | json_pp
+    curl -X GET 'https://openplzapi.org/de/Streets?name=Grabbeallee' -H 'accept: text/json' | json_pp
     ```
 
 Here is an example request for all streets in Berlin, starting with *G* and ending with *allee*. The regular expression `^G.*allee$` is [URL encoded](https://emn178.github.io/online-tools/url_encode.html): 
