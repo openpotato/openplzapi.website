@@ -1,4 +1,4 @@
-**OpenPLZ API** is a [open data project](https://opendatahandbook.org/guide/de/what-is-open-data/) that makes a public street directory for Germany, Austria, Switzerland and Liechtenstein available via an open REST API interface. The following data can be retrieved:
+**OpenPLZ API** is a [open data project](https://opendatahandbook.org/guide/de/what-is-open-data/) that makes a public street and postal code directory for Germany, Austria, Switzerland and Liechtenstein available via an open REST API interface. The following data can be retrieved:
 
 **:flag_de: - Germany:**
 

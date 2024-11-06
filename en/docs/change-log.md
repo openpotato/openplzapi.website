@@ -1,6 +1,4 @@
-We largely adhere to the recommendations from the community project [Keep a Changelog](https://keepachangelog.com).
-
-## OpenPLZ API Data
+## Data
 
 The current dataset (see also [data sources](sources.md)):
 
@@ -15,9 +13,14 @@ Country                   | Data source            | Release
 :flag_li: - Liechtenstein | Municipality directory | March 1996
 :flag_li: - Liechtenstein | Street directory       | 2024-09-18
 
-## OpenPLZ API Service
+## Web Service
 
-### Unveröffentlicht
+The OpenPLZ API Web Service is [Open Source](https://github.com/openpotato/openplzapi) on GitHub.
+The detailed [commit history](https://github.com/openpotato/openplzapi/commits/develop/) can be viewed there. This change log serves as a summarised overview of the changes.
+
+We largely adhere to the recommendations from the community project [Keep a Changelog](https://keepachangelog.com).
+
+### Unreleased
 
 First official version 1.0 later this year. The API interface will then be versioned as v1 and will no longer receive any breaking changes from then on.
 
