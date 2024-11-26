@@ -16,7 +16,7 @@ Alle Daten des OpenPLZ API-Projekts stammen aus öffentlichen Quellen und sind [
 
 ## Wie oft wird aktualisiert?
 
-Die Daten des OpenPLZ API-Projekts werden regelmäßig aktualisiert. Zur Zeit streben wir eine vierteljährliche Aktualisierung an. Der aktuelle Stand der Daten wird stets im [Änderungslog](change-log.md) dokumentiert.
+Die Daten des OpenPLZ API-Projekts werden regelmäßig aktualisiert. Zur Zeit streben wir eine vierteljährliche Aktualisierung an. Der aktuelle Stand der Daten wird stets im [Änderungslog](change-log-data.md) dokumentiert.
 
 ## Ich habe einen Fehler gefunden!
 

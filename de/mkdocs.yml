@@ -73,6 +73,7 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
+  - def_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -83,11 +84,21 @@ markdown_extensions:
 # Navigation
 nav:
   - Einführung: index.md
+  - Referenz:
+    - Deutschland: germany.md
+    - Liechtenstein: liechtenstein.md
+    - Schweiz: switzerland.md
+    - Österreich: austria.md
+    - Paging: paging.md
+    - URL-Koderierung: url-encoding.md
+    - Reguläre Ausdrücke: regex.md
+    - Volltextsuche: fulltextsearch.md
+    - Fehlermeldungen: errors.md
+  - Änderungslog:
+    - Daten: change-log-data.md
+    - Web-Service: change-log-webservice.md
   - Datenquellen: sources.md
-  - Paging: paging.md
-  - Reguläre Ausdrücke: regex.md
-  - Volltextsuche: fulltextsearch.md
+  - Client-Bibliotheken: libraries.md
   - Community: community.md
-  - Änderungslog: change-log.md
   - FAQ: faq.md
   - API: api.md

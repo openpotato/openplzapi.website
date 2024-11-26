@@ -46,9 +46,9 @@ Beispiel:
 
 + `a.c` stimmt mit jeder dreistelligen Zeichenfolge überein, die mit "a" beginnt und mit "c" endet, wobei jedes beliebige Zeichen dazwischen liegt (z. B. "abc", "a5c").
 
-<h4>Null oder mehr Wiederholungen</h4>
+<h4>0 oder mehr Wiederholungen</h4>
 
-Das Sternchen `*` stimmt mit dem vorherigen Element null oder mehrmals überein.
+Das Sternchen `*` stimmt mit dem vorherigen Element 0 oder mehrmals überein.
   
 Beispiel:
 
@@ -120,7 +120,7 @@ Klammern `\(` und `\)` werden verwendet, um Teile des Musters zu gruppieren. Der
 
 Beispiel:
 
-+ `\(ab\)*` stimmt mit null oder mehr Vorkommen von "ab" überein.
++ `\(ab\)*` stimmt mit 0 oder mehr Vorkommen von "ab" überein.
 
 <h4>Rückverweis</h4>
 

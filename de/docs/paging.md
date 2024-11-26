@@ -20,8 +20,8 @@ würde ohne Paging 15335 Straßen zurückliefern. Das ist eine ganze Menge und w
 
 Paging wird durch spezielle URL-Parametern im API-Aufruf konfiguriert. Damit wird angegeben, welche Seite von Ergebnissen der Client sehen möchte und wie viele Ergebnisse pro Seite angezeigt werden sollen. Die URL-Parameter heißen:
 
-1. `page`: Der Index der Seite, die angefordert wird.
-2. `pageSize`: Die Anzahl der Elemente pro Seite.
++ `page`: Der Index der Seite, die angefordert wird.
++ `pageSize`: Die Anzahl der Elemente pro Seite.
 
 Dieser Aufruf liefert die ersten 10 Adressen für Berlin zurück:
 
@@ -49,7 +49,7 @@ GET https://openplzapi.org/de/Streets?locality=Berlin&page=1&pageSize=50
 
 Die Maximalgröße für eine Seite ist 50.
 
-## Woher weiß ich wieviel Pages es gibt?
+## Woher weiß ich, wieviel Pages es gibt?
 
 Bei einer erfolgreichen Antwort eines API-Aufrufs werden in den [HTTP-Response-Headers](https://developer.mozilla.org/docs/Web/HTTP/Headers) zusätzliche Informationen mitgeliefert. Schauen wir uns eine typische Response-Header-Liste an:
 
@@ -71,10 +71,10 @@ x-total-pages: 1534
 
 Interessant sind für uns hier die letzten vier Werte:
 
-1. `x-page`: Der Index der Seite, die angefordert wurde.
-2. `x-page-size`: Die Anzahl der Elemente pro Seite.
-3. `x-total-count`: Die Gesamtzahl der Elemente für diese Anfrage.
-4. `x-total-pages`: Die Anzahl der Seiten für diese Anfrage.
++ `x-page`: Der Index der Seite, die angefordert wurde.
++ `x-page-size`: Die Anzahl der Elemente pro Seite.
++ `x-total-count`: Die Gesamtzahl der Elemente für diese Anfrage.
++ `x-total-pages`: Die Anzahl der Seiten für diese Anfrage.
 
 Diese Werte werden bei allen API-Endpunkten, die Paging implementieren zurückgeliefert.
 
@@ -86,8 +86,8 @@ Diese Werte werden bei allen API-Endpunkten, die Paging implementieren zurückge
 
 Einige API-Endpunkte implementieren kein Paging, da die resultierende Datenmenge überschaubar ist:
 
-+ `at/FederalProvinces`
-+ `ch/Cantons`
-+ `de/FederalStates`
-+ `li/Communes`
++ `https://openplzapi.org/at/FederalProvinces`
++ `https://openplzapi.org/ch/Cantons`
++ `https://openplzapi.org/de/FederalStates`
++ `https://openplzapi.org/li/Communes`
 

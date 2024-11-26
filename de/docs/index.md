@@ -1,32 +1,32 @@
 **OpenPLZ API** ist ein [Open Data-Projekt](https://opendatahandbook.org/guide/de/what-is-open-data/), das ein öffentliches Strassen-  und Postleitzahlverzeichnis für Deutschland, Österreich, die Schweiz und Liechtenstein über eine offene REST-API-Schnittstelle verfügbar macht. Folgende Daten sind abrufbar:
 
-**:flag_de: - Deutschland:**
+**:flag_de: Deutschland:**
 
 + Straßenname 
 + Postleitzahl und Ort
-+ Gemeinde (inklusive Angaben zu Kreis, Bezirk und Bundesland)
++ Gemeinde (inklusive Angaben zu Kreis, Regierungsbezirk und Bundesland)
 
-**:flag_at: - Österreich:**
-
-+ Straßenname 
-+ Postleitzahl und Ort
-+ Gemeinde (inklusive Angaben zu Bezirk und Bundesland)
-
-**:flag_ch: - Schweiz:** 
-
-+ Straßenname 
-+ Postleitzahl und Ort
-+ Gemeinde (inklusive Angaben zu Bezirk und Kanton)
-
-**:flag_li: - Liechtenstein:** 
+**:flag_li: Liechtenstein:** 
 
 + Straßenname 
 + Postleitzahl und Ort
 + Gemeinde
 
+**:flag_ch: Schweiz:** 
+
++ Straßenname 
++ Postleitzahl und Ort
++ Gemeinde (inklusive Angaben zu Bezirk und Kanton)
+
+**:flag_at: Österreich:**
+
++ Straßenname 
++ Postleitzahl und Ort
++ Gemeinde (inklusive Angaben zu Bezirk und Bundesland)
+
 ## Los geht's
 
-Der einfachste Weg, die API zu nutzen, ist der Weg über die Kommandozeile. Wir werden in diesem Kapitel mit der Kommandozeilenanwendung [curl](https://curl.se/) arbeiten. 
+Der einfachste Weg, die API zu nutzen, ist der Weg über die Kommandozeile. Wir werden in diesem Kapitel und weiteren Kapiteln mit der Kommandozeilenanwendung [curl](https://curl.se/) arbeiten. 
 
 Unter Linux ist `curl` in der Regel vorinstalliert. Unter Windows ist `curl` als Alias des Cmdlet [Invoke-WebRequest](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-webrequest) definiert, kann also via Powershell genutzt werden. Die hier verwendeten Befehlsfolgen variieren leicht, daher werden sie für Powershell 7 (Windows) und Bash (Linux) getrennt angegeben.
 
@@ -96,18 +96,18 @@ Hier eine Beispielabfrage für die deutsche Postleitzahl *13156*:
     curl -X GET 'https://openplzapi.org/de/Localities?postalCode=13156' -H 'accept: text/json' | json_pp
     ```
 
-Hier eine Beispielabfrage für alle deutschen Postleitzahlen, die mit *13* beginnen: 
+Hier eine Beispielabfrage für alle deutschen Postleitzahlen, die mit *13* beginnen. Der reguläre Ausruck `^13` ist [URL-kodiert](url-encoding.md): 
 
 === "Powershell 7"
 
     ``` powershell
-    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=^13' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=%5E13' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
     ```
 
 === "Bash"
 
     ``` bash
-    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=^13' -H 'accept: text/json' | json_pp
+    curl -X GET 'https://openplzapi.org/de/Localities?postalCode=%5E13' -H 'accept: text/json' | json_pp
     ```
 
 Ortsabfragen unterliegen einem [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Orte zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 
@@ -144,7 +144,7 @@ Hier eine Beispielabfrage für die deutsche Straße *Grabbeallee* (gibt es nur e
     curl -X GET 'https://openplzapi.org/de/Streets?name=Grabbeallee' -H 'accept: text/json' | json_pp
     ```
 
-Hier eine Beispielabfrage für alle Straßen in Berlin, die mit *G* anfängt und mit *allee* aufhört. Der reguläre Ausruck `^G.*allee$` ist [URL-kodiert](https://emn178.github.io/online-tools/url_encode.html): 
+Hier eine Beispielabfrage für alle Straßen in Berlin, die mit *G* anfängt und mit *allee* aufhört. Der reguläre Ausruck `^G.*allee$` ist [URL-kodiert](url-encoding.md): 
 
 === "Powershell 7"
 
@@ -178,32 +178,32 @@ Hier das erste Beispiel mit explizitem Paging (zweite Seite mit maximal 20 Stra�
 
 Für jedes Land kann eine [Volltextsuche](fulltextsearch.md) über Straßenname, Postleitzahl und Ortsname durchgeführt werden.
 
-Hier eine Volltextsuche für Deutschland mit dem Suchbegriff `Berlin, Pariser Platz`. Der Suchbegriff ist [URL-kodiert](https://emn178.github.io/online-tools/url_encode.html): 
+Hier eine Volltextsuche für Deutschland mit dem Suchbegriff `Berlin, Pariser Platz`. Der Suchbegriff ist [URL-kodiert](url-encoding.md): 
 
 === "Powershell 7"
 
     ``` powershell
-    curl -X GET 'https://localhost:44365/de/FullTextSearch?searchTerm=Berlin%2C%20Pariser%20Platz' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    curl -X GET 'https://openplzapi.org/de/FullTextSearch?searchTerm=Berlin%2C%20Pariser%20Platz' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
     ```
 
 === "Bash"
 
     ``` bash
-    curl -X GET 'https://localhost:44365/de/FullTextSearch?searchTerm=Berlin%2C%20Pariser%20Platz' -H 'accept: text/json' | json_pp
+    curl -X GET 'https://openplzapi.org/de/FullTextSearch?searchTerm=Berlin%2C%20Pariser%20Platz' -H 'accept: text/json' | json_pp
     ```
 
-Hier eine Volltextsuche für Liechtenstein mit dem Suchbegriff `9490 Alte Landstrasse`. Der Suchbegriff ist [URL-kodiert](https://emn178.github.io/online-tools/url_encode.html): 
+Hier eine Volltextsuche für Liechtenstein mit dem Suchbegriff `9490 Alte Landstrasse`. Der Suchbegriff ist [URL-kodiert](url-encoding.md): 
 
 === "Powershell 7"
 
     ``` powershell
-    curl -X GET 'https://localhost:44365/li/FullTextSearch?searchTerm=9490%20Alte%20Landstrasse' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
+    curl -X GET 'https://openplzapi.org/li/FullTextSearch?searchTerm=9490%20Alte%20Landstrasse' -H 'accept: text/json' | ConvertFrom-Json | ConvertTo-Json
     ```
 
 === "Bash"
 
     ``` bash
-    curl -X GET 'https://localhost:44365/li/FullTextSearch?searchTerm=9490%20Alte%20Landstrasse' -H 'accept: text/json' | json_pp
+    curl -X GET `https://openplzapi.org/li/FullTextSearch?searchTerm=9490%20Alte%20Landstrasse' -H 'accept: text/json' | json_pp
     ```
 
 Die Volltextsuche unterliegt einem [Paging](paging.md), d.h. das Resultat wird in adressierbaren Datenblöcken zurückgeliefert. Standardmäßig wird nur der erste Block bzw. die erste Seite mit maximal 50 Straßen zurückgeliefert. Dies kann aber durch Angabe der optionalen Parameter `page` und `pageSize` beeinflusst werden. 

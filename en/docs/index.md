@@ -1,28 +1,28 @@
 **OpenPLZ API** is a [open data project](https://opendatahandbook.org/guide/de/what-is-open-data/) that makes a public street and postal code directory for Germany, Austria, Switzerland and Liechtenstein available via an open REST API interface. The following data can be retrieved:
 
-**:flag_de: - Germany:**
-
-+ Street name 
-+ Postal code and locality 
-+ Municipality (including details of district, government region and federal state)
-
-**:flag_at: - Austria:**
+**:flag_at: Austria:**
 
 + Street name 
 + Postal code and locality 
 + Municipality (including details of district and federal province)
 
-**:flag_ch: - Switzerland:** 
+**:flag_de: Germany:**
 
 + Street name 
 + Postal code and locality 
-+ Municipality (including details of district and canton)
++ Municipality (including details of district, government region and federal state)
 
-**:flag_li: - Liechtenstein:** 
+**:flag_li: Liechtenstein:** 
 
 + Street name 
 + Postal code and locality 
 + Municipality
+
+**:flag_ch: Switzerland:** 
+
++ Street name 
++ Postal code and locality 
++ Municipality (including details of district and canton)
 
 ## Let's start
 
@@ -144,7 +144,7 @@ Here is an example request for the German street *Grabbeallee* (exists only once
     curl -X GET 'https://openplzapi.org/de/Streets?name=Grabbeallee' -H 'accept: text/json' | json_pp
     ```
 
-Here is an example request for all streets in Berlin, starting with *G* and ending with *allee*. The regular expression `^G.*allee$` is [URL encoded](https://emn178.github.io/online-tools/url_encode.html): 
+Here is an example request for all streets in Berlin, starting with *G* and ending with *allee*. The regular expression `^G.*allee$` is [URL encoded](url-encoding.md): 
 
 === "Powershell 7"
 
@@ -174,11 +174,11 @@ Here is the first example with explicit paging (second page with a maximum of 20
     curl -X GET 'https://openplzapi.org/de/Streets?name=Grabbeallee&page=2&pageSize=20' -H 'accept: text/json' | json_pp
     ```
 
-### Full text search
+### Full-text search
 
-A [full text search](fulltextsearch.md) can be carried out for each country using the street name, postcode and location name.
+A [full-text search](fulltextsearch.md) can be carried out for each country using the street name, postcode and location name.
 
-Here is a full-text search for Germany with the search term `Berlin, Pariser Platz`. The search term is [URL-encoded](https://emn178.github.io/online-tools/url_encode.html): 
+Here is a full-text search for Germany with the search term `Berlin, Pariser Platz`. The search term is [URL-encoded](url-encoding.md): 
 
 === "powershell 7"
 
@@ -192,7 +192,7 @@ Here is a full-text search for Germany with the search term `Berlin, Pariser Pla
     curl -X GET ‘https://localhost:44365/de/FullTextSearch?searchTerm=Berlin%2C%20Pariser%20Platz’ -H ‘accept: text/json’ | json_pp
     ```
 
-Here is a full text search for Liechtenstein with the search term `9490 Alte Landstrasse`. The search term is [URL-encoded](https://emn178.github.io/online-tools/url_encode.html): 
+Here is a full-text search for Liechtenstein with the search term `9490 Alte Landstrasse`. The search term is [URL-encoded](url-encoding.md): 
 
 === "Powershell 7"
 
