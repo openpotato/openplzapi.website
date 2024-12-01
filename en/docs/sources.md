@@ -43,11 +43,11 @@ Source:
 
 ### Municipal directory
 
-The [Federal Statistical Office](https://www.bfs.admin.ch/bfs/en/home.html) provides downloads for regional breakdown.
+The [Federal Statistical Office](https://www.bfs.admin.ch/bfs/en/home.html) provides APIs and downloads for regional breakdown.
 
 Source:
 
-+ [Municipal directory (including districts and cantons)](https://www.bfs.admin.ch/asset/de/31265302)
++ [Application of the Swiss municipalities](https://www.agvchapp.bfs.admin.ch/de)
 
 ### Street directory
 

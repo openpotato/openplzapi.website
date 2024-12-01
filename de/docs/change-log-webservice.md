@@ -8,6 +8,14 @@ Wir halten uns dabei weitestgehend an die Empfehlungen aus dem Community-Projekt
 
 Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann als v1 versioniert und bekommt ab dann keine Breaking Changes mehr.
 
+## 0.1.0 <small>_ 02. Dezember 2024</small>
+
+**Geändert:**
+
++ Update auf .NET 9.
++ Breaking API change: Gemeinden, Bezirke und Kantone für die Schweiz haben jetzt alle die Eigenschaften `HistoricalCode` und `ShortName` hinzubekommen. Die Eigenschaft `Code` bei Kantonen wurde dafür gestrichen.
++ Refactoring der Quelle für das Gemeindeverzeichniss der Schweiz. Es wird jetzt direkt auf die API des Bundesamt für Statistik (BFS) zugegriffen
+
 ### 0.0.6 <small>_ 25. November 2024</small>
 
 **Hinzugefügt:** 

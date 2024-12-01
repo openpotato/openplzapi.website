@@ -43,11 +43,11 @@ Quelle:
 
 ### Gemeindeverzeichnis
 
-Das [Bundesamt für Statistik](https://www.bfs.admin.ch) stellt Downloads zur regionalen Gliederung bereit.
+Das [Bundesamt für Statistik](https://www.bfs.admin.ch) stellt APIs und Downloads zur regionalen Gliederung bereit.
 
 Quelle:
 
-+ [Gemeindeverzeichnis (inklusive Bezirke und Kantone)](https://www.bfs.admin.ch/asset/de/31265302)
++ [Applikation der Schweizer Gemeinden](https://www.agvchapp.bfs.admin.ch/de)
 
 ### Straßenverzeichnis
 

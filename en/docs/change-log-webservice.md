@@ -8,6 +8,14 @@ We largely adhere to the recommendations from the community project [Keep a Chan
 
 First official version 1.0 later this year. The API interface will then be versioned as v1 and will no longer receive any breaking changes from then on.
 
+## 0.1.0 <small>_ December 02, 2024</small>
+
+**Changed:**
+
++ Update to .NET 9
++ Breaking API change: Communes, districts and cantons for Switzerland have now all been given the properties `HistoricalCode` and `ShortName`. The `Code` property for cantons has been removed.
++ Refactoring of the source for the Swiss commune directory. The API of the Federal Statistical Office (FSO) is now accessed directly.
+
 ## 0.0.6 <small>_ November 25, 2024</small>
 
 **Added:** 
@@ -24,8 +32,8 @@ First official version 1.0 later this year. The API interface will then be versi
 
 **Added:** 
 
-- Street entities for Germany now contain additional information on borough and/or suburb (if available in OpenStreetMap)
-- Support for streets and postal codes from Liechtenstein
++ Street entities for Germany now contain additional information on borough and/or suburb (if available in OpenStreetMap)
++ Support for streets and postal codes from Liechtenstein
 
 **Changed:**
 
@@ -35,18 +43,18 @@ First official version 1.0 later this year. The API interface will then be versi
 
 **Added:** 
 
-- New API endpoints for `Locality` entities
-- Paging for nearly all API endpoints
++ New API endpoints for `Locality` entities
++ Paging for nearly all API endpoints
 
 **Changed:**
 
-- Update to .NET 8
++ Update to .NET 8
 
 ## 0.0.3 <small>_ September 27, 2023</small>
 
 **Added:** 
 
-- CSV as additional output format
++ CSV as additional output format
 
 **Changed:**
 
@@ -56,7 +64,7 @@ First official version 1.0 later this year. The API interface will then be versi
 
 **Added:** 
 
-- `Street` entities and `Locality` entities now contain more detailed information on municipalities, districts and federal states or cantons.
++ `Street` entities and `Locality` entities now contain more detailed information on municipalities, districts and federal states or cantons.
 + [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) support added.
 
 ## 0.0.1 <small>_ December 09, 2022</small>

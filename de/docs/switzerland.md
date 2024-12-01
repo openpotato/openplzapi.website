@@ -28,9 +28,10 @@ Die 26 Schweizer Kantone werden über den folgenden API-Endpunkt abgefragt:
 
 Pro Kanton werden folgende Attribute geliefert:
 
-+ `key (string)`: Kantonsnummer (max. 2-stellig)
-+ `code (string)`: Kantonskürzel (2-stellig)
++ `key (string)`: Bfs-Nummer des Kantons (max. 2-stellig)
++ `historicalCode (string)`: Historisierte Nummer des Kantons
 + `name (string)`: Kantonsname
++ `shortName (string)`: Kantonskürzel (2-stellig)
 
 Hier eine Beispielabfrage für die komplette Liste der Kantone: 
 
@@ -50,11 +51,13 @@ Die Abfrage der Bezirke erfolgt über folgenden API-Endpunkt:
   
 Pro Bezirk werden folgende Attribute geliefert:
 
-+ `key (string)`: Bezirksnummer (max. 4-stellig)
++ `key (string)`: Bfs-Nummer des Bezirks (max. 4-stellig)
++ `historicalCode (string)`: Historisierte Nummer des Bezirks
 + `name (string)`: Bezirksname
-+ `canton.key (string)`: Kantonsnummer (max. 2-stellig)
-+ `canton.code (string)`: Kantonskürzel (2-stellig)
++ `shortName (string)`: Bezirksname, kurz
++ `canton.key (string)`: Bfs-Nummer des Kantons (max. 2-stellig)
 + `canton.name (string)`: Kantonsname
++ `canton.shortName (string)`: Kantonskürzel (2-stellig)
 
 Hier eine Beispielabfrage für die Liste der Bezirke im Kanton Freiburg (Kantonsnummer: `10`): 
 
@@ -78,14 +81,16 @@ Die Abfrage der Gemeinden erfolgt über folgende API-Endpunkte:
 
 Pro Gemeinde werden folgende Attribute geliefert:
 
-+ `key (string)`: Gemeindenummer (max. 4-stellig)
++ `key (string)`: Bfs-Nummer der Gemeinde (max. 4-stellig)
++ `historicalCode (string)`: Historisierte Nummer der Gemeinde
 + `name (string)`: Amtlicher Gemeindename
 + `shortName (string)`: Gemeindename, kurz
-+ `district.key (string)`: Bezirksnummer (max. 4-stellig)
++ `district.key (string)`: Bfs-Nummer des Bezirks (max. 4-stellig)
 + `district.name (string)`: Bezirksname
-+ `canton.key (string)`: Kantonsnummer (max. 2-stellig)
-+ `canton.code (string)`: Kantonskürzel (2-stellig)
++ `district.shortName (string)`: Bezirksname, kurz
++ `canton.key (string)`: Bfs-Nummer des Kantons (max. 2-stellig)
 + `canton.name (string)`: Kantonsname
++ `canton.shortName (string)`: Kantonskürzel (2-stellig)
 
 Hier eine Beispielabfrage für die Liste der Gemeinden im Kanton Freiburg (Kantonsnummer: `10`): 
 
@@ -116,14 +121,15 @@ Pro Ort werden folgende Attribute geliefert:
 + `key (string)`: Ortschaftskennziffer
 + `name (string)`: Name des Ortes
 + `postalcode (string)`: Postleitzahl des Ortes
-+ `commune.key (string)`: Gemeindenummer (max. 4-stellig)
++ `commune.key (string)`: Bfs-Nummer der Gemeinde (max. 4-stellig)
 + `commune.name (string)`: Amtlicher Gemeindename
 + `commune.shortName (string)`: Gemeindename, kurz
-+ `district.key (string)`: Bezirksnummer (max. 4-stellig)
++ `district.key (string)`: Bfs-Nummer des Bezirks (max. 4-stellig)
 + `district.name (string)`: Bezirksname
-+ `canton.key (string)`: Kantonsnummer (max. 2-stellig)
-+ `canton.code (string)`: Kantonskürzel  (2-stellig)
++ `district.shortName (string)`: Bezirksname, kurz
++ `canton.key (string)`: Bfs-Nummer des Kantons (max. 2-stellig)
 + `canton.name (string)`: Kantonsname
++ `canton.shortName (string)`: Kantonskürzel (2-stellig)
 
 Hier eine Beispielabfrage für die Postleitzahl *8001*: 
 
@@ -161,14 +167,15 @@ Pro Straße werden folgende Attribute geliefert:
     + `Outdated`
 + `postalcode (string)`: Postleitzahl des Ortes
 + `locality (string)`: Name des Ortes
-+ `commune.key (string)`: Gemeindenummer (max. 4-stellig)
++ `commune.key (string)`: Bfs-Nummer der Gemeinde (max. 4-stellig)
 + `commune.name (string)`: Amtlicher Gemeindename
 + `commune.shortName (string)`: Gemeindename, kurz
-+ `district.key (string)`: Bezirksnummer (max. 4-stellig)
++ `district.key (string)`: Bfs-Nummer des Bezirks (max. 4-stellig)
 + `district.name (string)`: Bezirksname
-+ `canton.key (string)`: Kantonsnummer (max. 2-stellig)
-+ `canton.code (string)`: Kantonskürzel  (2-stellig)
++ `district.shortName (string)`: Bezirksname, kurz
++ `canton.key (string)`: Bfs-Nummer des Kantons (max. 2-stellig)
 + `canton.name (string)`: Kantonsname
++ `canton.shortName (string)`: Kantonskürzel (2-stellig)
 
 Hier eine Beispielabfrage für die Straße *Bederstrasse* (gibt es nur einmal in Zürich): 
 

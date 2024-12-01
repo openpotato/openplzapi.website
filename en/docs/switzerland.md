@@ -28,9 +28,10 @@ The 26 Swiss cantons can be queried through the following API endpoint:
 
 For each canton, the following attributes are provided:
 
-+ `key (string)`: Canton number (up to 2 digits)
-+ `code (string)`: Canton abbreviation (2 characters)
++ `key (string)`: Bfs code of the canton (max. 2 digits)
++ `historicalCode (string)`: Historical code of the canton
 + `name (string)`: Canton name
++ `shortName (string)`: Canton abbreviation (2 digits)
 
 Example request for the complete list of cantons:
 
@@ -50,11 +51,13 @@ Districts can be queried through the following API endpoint:
 
 For each district, the following attributes are provided:
 
-+ `key (string)`: District number (up to 4 digits)
++ `key (string)`: Bfs code of the district (max. 4 digits)
++ `historicalCode (string)`: Historical code of the district
 + `name (string)`: District name
-+ `canton.key (string)`: Canton number (up to 2 digits)
-+ `canton.code (string)`: Canton abbreviation (2 characters)
++ `shortName (string)`: District name, short
++ `canton.key (string)`: Bfs code of the canton (max. 2 digits)
 + `canton.name (string)`: Canton name
++ `canton.shortName (string)`: Canton abbreviation (2 digits)
 
 Example request for districts in the canton of Fribourg (Canton Key: `10`):
 
@@ -78,14 +81,16 @@ Communes can be queried through the following API endpoints:
 
 For each commune, the following attributes are provided:
 
-+ `key (string)`: Commune number (up to 4 digits)
++ `key (string)`: Bfs code of the commune (max. 4 digits)
++ `historicalCode (string)`: Historical code of the commune
 + `name (string)`: Official commune name
-+ `shortName (string)`: Short commune name
-+ `district.key (string)`: District number (up to 4 digits)
++ `shortName (string)`: Commune name, short
++ `district.key (string)`: Bfs code of the district (max. 4 digits)
 + `district.name (string)`: District name
-+ `canton.key (string)`: Canton number (up to 2 digits)
-+ `canton.code (string)`: Canton abbreviation (2 characters)
++ `district.shortName (string)`: District name, short
++ `canton.key (string)`: Bfs code of the canton (max. 2 digits)
 + `canton.name (string)`: Canton name
++ `canton.shortName (string)`: Canton abbreviation (2 digits)
 
 Example request for communes in the canton of Fribourg (Canton Key: `10`):
 
@@ -116,14 +121,15 @@ For each locality, the following attributes are provided:
 + `key (string)`: Locality code
 + `name (string)`: Locality name
 + `postalcode (string)`: Postal code of the locality
-+ `commune.key (string)`: Commune number (up to 4 digits)
++ `commune.key (string)`: Bfs code of the commune (max. 4 digits)
 + `commune.name (string)`: Official commune name
-+ `commune.shortName (string)`: Short commune name
-+ `district.key (string)`: District number (up to 4 digits)
++ `commune.shortName (string)`: Commune name, short
++ `district.key (string)`: Bfs code of the district (max. 4 digits)
 + `district.name (string)`: District name
-+ `canton.key (string)`: Canton number (up to 2 digits)
-+ `canton.code (string)`: Canton abbreviation (2 characters)
++ `district.shortName (string)`: District name, short
++ `canton.key (string)`: Bfs code of the canton (max. 2 digits)
 + `canton.name (string)`: Canton name
++ `canton.shortName (string)`: Canton abbreviation (2 digits)
 
 Example request for postal code *8001*:
 
@@ -161,14 +167,15 @@ For each street, the following attributes are provided:
     + `Outdated`
 + `postalcode (string)`: Postal code of the locality
 + `locality (string)`: Locality name
-+ `commune.key (string)`: Commune number (up to 4 digits)
++ `commune.key (string)`: Bfs code of the commune (max. 4 digits)
 + `commune.name (string)`: Official commune name
-+ `commune.shortName (string)`: Short commune name
-+ `district.key (string)`: District number (up to 4 digits)
++ `commune.shortName (string)`: Commune name, short
++ `district.key (string)`: Bfs code of the district (max. 4 digits)
 + `district.name (string)`: District name
-+ `canton.key (string)`: Canton number (up to 2 digits)
-+ `canton.code (string)`: Canton abbreviation (2 characters)
++ `district.shortName (string)`: District name, short
++ `canton.key (string)`: Bfs code of the canton (max. 2 digits)
 + `canton.name (string)`: Canton name
++ `canton.shortName (string)`: Canton abbreviation (2 digits)
 
 Example request for the street *Bederstrasse* (unique in Zurich):
 
