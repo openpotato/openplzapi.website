@@ -4,7 +4,7 @@ Der OpenPLZ API Web-Service ist [Open Source](https://github.com/openpotato/open
 
 Wir halten uns dabei weitestgehend an die Empfehlungen aus dem Community-Projekt [Keep a Changelog](https://keepachangelog.com/de).
 
-### Unveröffentlicht
+## Unveröffentlicht
 
 Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann als v1 versioniert und bekommt ab dann keine Breaking Changes mehr.
 
@@ -16,7 +16,7 @@ Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann
 + Breaking API change: Gemeinden, Bezirke und Kantone für die Schweiz haben jetzt alle die Eigenschaften `HistoricalCode` und `ShortName` hinzubekommen. Die Eigenschaft `Code` bei Kantonen wurde dafür gestrichen.
 + Refactoring der Quelle für das Gemeindeverzeichniss der Schweiz. Es wird jetzt direkt auf die API des Bundesamt für Statistik (BFS) zugegriffen
 
-### 0.0.6 <small>_ 25. November 2024</small>
+## 0.0.6 <small>_ 25. November 2024</small>
 
 **Hinzugefügt:** 
 
@@ -28,7 +28,7 @@ Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann
 
 + Fehlerhafte URL für API-Endpunkt `li/Communes` korrigiert (war zuvor `li/Cantons/Communes`).
 
-### 0.0.5 <small>_ 20. September 2024</small>
+## 0.0.5 <small>_ 20. September 2024</small>
 
 **Hinzugefügt:** 
 
@@ -39,7 +39,7 @@ Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann
 
 + Aktualisierung der Datenquellen.
 
-### 0.0.4 <small>_ 23. November 2023</small>
+## 0.0.4 <small>_ 23. November 2023</small>
 
 **Hinzugefügt:**
 
@@ -50,7 +50,7 @@ Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann
 
 + Update auf .NET 8.
 
-### 0.0.3 <small>_ 27. September 2023</small>
+## 0.0.3 <small>_ 27. September 2023</small>
 
 **Hinzugefügt:**
 
@@ -60,13 +60,13 @@ Erste offizielle Version 1.0 noch in diesem Jahr. Die API-Schnitstelle wird dann
 
 + Aktualisierung der Datenquellen.
 
-### 0.0.2 <small>_ 05. Februar 2023</small>
+## 0.0.2 <small>_ 05. Februar 2023</small>
 
 **Hinzugefügt:**
 
 + `Street`-Entitäten und `Locality`-Entitäten enthalten jetzt ausführlichere Angaben zu Gemeinden, Kreisen, Bezirken und Bundesländern bzw. Kantonen.
 + [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)-Unterstützung hinzugefügt.
 
-### 0.0.1 <small>_ 09. Dezember 2022</small>
+## 0.0.1 <small>_ 09. Dezember 2022</small>
 
 Erste Veröffentlichung.
