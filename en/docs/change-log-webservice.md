@@ -4,9 +4,19 @@ The OpenPLZ API Web Service is [Open Source](https://github.com/openpotato/openp
 
 We largely adhere to the recommendations from the community project [Keep a Changelog](https://keepachangelog.com).
 
-## Unreleased
+## 1.0.0 <small>_ December 16, 2024</small>
 
-First official version 1.0 later this year. The API interface will then be versioned as v1 and will no longer receive any breaking changes from then on.
+**Added:** 
+
++ Added HTTP Access-Control-Expose-Headers response header
+
+**Changed:**
+
++ Breaking API change: Missing paging endpoint for `at/Districts/{key}/Localities`
+
+**Fixed:**
+
++ Bug fix for Swiss CSV response format
 
 ## 0.1.0 <small>_ December 02, 2024</small>
 

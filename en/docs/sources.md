@@ -28,8 +28,8 @@ The [Bundesanstalt Statistik Österreich (STATISTIK AUSTRIA)](https://www.statis
 
 Sources:
 
-+ [Political districts and federal provinces](https://www.statistik.at/verzeichnis/reglisten/polbezirke.pdf)
-+ [Municipalities](https://www.statistik.at/verzeichnis/reglisten/gemliste_knz.pdf)
++ [Political districts and federal provinces (PDF)](https://www.statistik.at/verzeichnis/reglisten/polbezirke.pdf)
++ [Municipalities (PDF)](https://www.statistik.at/verzeichnis/reglisten/gemliste_knz.pdf)
 
 ### Street directory
 

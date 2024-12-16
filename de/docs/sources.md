@@ -28,8 +28,8 @@ Die [Bundesanstalt Statistik Österreich (STATISTIK AUSTRIA)](https://www.statis
 
 Quellen:
 
-+ [Politische Bezirke und Bundesländer](https://www.statistik.at/verzeichnis/reglisten/polbezirke.pdf)
-+ [Gemeinden](https://www.statistik.at/verzeichnis/reglisten/gemliste_knz.pdf)
++ [Politische Bezirke und Bundesländer (PDF)](https://www.statistik.at/verzeichnis/reglisten/polbezirke.pdf)
++ [Gemeinden (PDF)](https://www.statistik.at/verzeichnis/reglisten/gemliste_knz.pdf)
 
 ### Straßenverzeichnis
 
