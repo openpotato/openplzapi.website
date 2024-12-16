@@ -1,4 +1,4 @@
-# Änderungslog - Web-Service  
+# Change Log - Web Service  
 
 The OpenPLZ API Web Service is [Open Source](https://github.com/openpotato/openplzapi) on GitHub. The detailed [commit history](https://github.com/openpotato/openplzapi/commits/develop/) can be viewed there. This change log serves as a summarised overview of the changes.
 
