@@ -6,7 +6,7 @@ site_url: 'https://www.openplzapi.org/'
 
 # Copyright
 copyright:
-  '&copy; 2024 STÜBER SYSTEMS GmbH : <a href="https://legal.stueber.co.uk/imprint.php">Imprint</a> : <a href="https://legal.stueber.co.uk/privacy.php">Privacy</a>'
+  '&copy; 2025 STÜBER SYSTEMS GmbH : <a href="https://legal.stueber.co.uk/imprint.php">Imprint</a> : <a href="https://legal.stueber.co.uk/privacy.php">Privacy</a>'
 
 # Repository
 repo_name: 'On GitHub'
@@ -48,10 +48,10 @@ theme:
 # Social media & multi language
 extra:
   social:
-    - icon: fontawesome/brands/mastodon
+    - icon: fontawesome/brands/bluesky
+      link: https://bsky.app/profile/openpotato.org
+    - icon: fontawesome/brands/mastodon 
       link: https://fosstodon.org/@openpotato
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/openpotatis
   alternate:
     - name: Deutsch
       link: /de/
@@ -84,7 +84,7 @@ markdown_extensions:
 # Navigation
 nav:
   - Welcome: index.md
-  - Referenz:
+  - Reference:
     - Austria: austria.md
     - Germany: germany.md
     - Liechtenstein: liechtenstein.md
