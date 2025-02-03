@@ -28,6 +28,7 @@ Die [Bundesanstalt Statistik Österreich (STATISTIK AUSTRIA)](https://www.statis
 
 Quellen:
 
++ [Statistik Austria Open.data](https://data.statistik.gv.at/)
 + [Politische Bezirke und Bundesländer (PDF)](https://www.statistik.at/verzeichnis/reglisten/polbezirke.pdf)
 + [Gemeinden (PDF)](https://www.statistik.at/verzeichnis/reglisten/gemliste_knz.pdf)
 
