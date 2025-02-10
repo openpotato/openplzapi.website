@@ -43,10 +43,6 @@ For the OpenPLZ API, this primarily concerns the values and [regular expressions
 
     A space can also be represented by a plus sign (`+`) instead of `%20`.
 
-You can use the following open-source tool to encode any value:
-
-+ [URL Encode Tool](https://emn178.github.io/online-tools/url_encode.html)
-
 ## Example
 
 The following OpenPLZ API example returns all streets in `München` where the postal code starts with `808`:
@@ -63,6 +59,30 @@ The following OpenPLZ API example returns all streets in `München` where the po
     GET https://openplzapi.org/de/Streets?postalcode=%5E808&locality=M%C3%BCnchen
     ```
     Here, the circumflex `^` in the [regular expression](regex.md) is encoded as `%5E`, and the umlaut `ü` in "München" is encoded as `%C3%BC`.
+
+## Tool
+
+The following tool helps you to encode any value. To do this, type the text into the first text field and click on ‘Encode’.
+
+<input class="md-input md-input--stretch" type="text" id="inputText" placeholder="Enter text here" oninput="handleInputChange()">
+
+<button class="md-button" id="encodeButton" onclick="encodeText()">Encode</button>
+  
+You can see the URL encoded result here:
+	
+<input class="md-input md-input--stretch" type="text" id="outputText" readonly>
+
+<script>
+  function handleInputChange() {
+    const outputField = document.getElementById('outputText');
+    outputField.value = '';
+  }
+  function encodeText() {
+    const inputField = document.getElementById('inputText');
+	const encodedText = encodeURIComponent(inputField.value);
+    document.getElementById('outputText').value = encodedText;
+  }
+</script>
 
 ## Encoding Tables
 

@@ -43,10 +43,6 @@ Im Kontext von OpenPLZ API betrifft dies vor allem die Werte und [regulären Aus
 
     Statt mit `%20` kann ein Leerzeichen auch durch ein Pluszeichen (`+`) repräsentiert werden. 
 
-Das folgende Open Source-Werkzeug hilft dir dabei, einen beliebigen Wert zu kodieren:
-
-+ [URL Encode Tool](https://emn178.github.io/online-tools/url_encode.html)
-
 ## Beispiel
 
 Das folgende OpenPLZ API-Beispiel liefert alle Straßen für `München` zurück, deren Postleitzahl mit `808` beginnt:
@@ -63,6 +59,30 @@ Das folgende OpenPLZ API-Beispiel liefert alle Straßen für `München` zurück,
     GET https://openplzapi.org/de/Streets?postalcode=%5E808&locality=M%C3%BCnchen
     ```
     Hier wurden der Zirkumflex `^` des [regulären Ausdrucks](regex.md) mit `%5E` sowie der Umlaut `ü` in "München" mit `%C3%BC` kodiert.
+
+## Werkzeug
+
+Das folgende Werkzeug hilft dir dabei, einen beliebigen Wert zu kodieren. Tippe dazu den Text in das erste Textfeld ein und klicke auf "Kodieren".
+
+<input class="md-input md-input--stretch" type="text" id="inputText" placeholder="Hier Text eingeben" oninput="handleInputChange()">
+
+<button class="md-button" id="encodeButton" onclick="encodeText()">Kodieren</button>
+  
+Das URL-kodierte Ergebnis siehst Du hier:
+	
+<input class="md-input md-input--stretch" type="text" id="outputText" readonly>
+
+<script>
+  function handleInputChange() {
+    const outputField = document.getElementById('outputText');
+    outputField.value = '';
+  }
+  function encodeText() {
+    const inputField = document.getElementById('inputText');
+	const encodedText = encodeURIComponent(inputField.value);
+    document.getElementById('outputText').value = encodedText;
+  }
+</script>
 
 ## Kodierungslisten
 
