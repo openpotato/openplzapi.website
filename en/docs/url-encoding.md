@@ -17,14 +17,14 @@ For the OpenPLZ API, this primarily concerns the values and [regular expressions
 
 ## Which Characters Must Be Encoded?
 
-1. **Special Characters and Spaces:**  
+1. Special Characters and Spaces:
 
     + A space becomes `%20`.  
     + `&` becomes `%26`.  
     + `=` becomes `%3D`.  
     + etc.
 
-2. **Non-English Letters (Umlauts, Accents, etc.):**  
+2. Non-English Letters (Umlauts, Accents, etc.):
 
     + `ä` becomes `%C3%A4`.  
     + `ö` becomes `%C3%B6`.  
@@ -32,7 +32,7 @@ For the OpenPLZ API, this primarily concerns the values and [regular expressions
     + `ë` becomes `%C3%AB`.  
     + etc.
 
-3. **Other Special Symbols:**  
+3. Other Special Symbols:
 
     + `#` becomes `%23`.  
     + `+` becomes `%2B`.  

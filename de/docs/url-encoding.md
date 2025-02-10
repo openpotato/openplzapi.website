@@ -17,14 +17,14 @@ Im Kontext von OpenPLZ API betrifft dies vor allem die Werte und [regulären Aus
 
 ## Welche Zeichen müssen kodiert werden?
 
-1. **Sonderzeichen und Leerzeichen:**  
+1. Sonderzeichen und Leerzeichen:
 
     + Ein Leerzeichen wird zu `%20`.  
     + `&` wird zu `%26`.  
     + `=` wird zu `%3D`.
     + etc.
 
-2. **Nicht-englische Buchstaben (Umlaute, Akzente usw.):**  
+2. Nicht-englische Buchstaben (Umlaute, Akzente usw.):
 
     + `ä` wird zu `%C3%A4`.  
     + `ö` wird zu `%C3%B6`.  
@@ -32,7 +32,7 @@ Im Kontext von OpenPLZ API betrifft dies vor allem die Werte und [regulären Aus
     + `ë` wird zu `%C3%AB`.
     + etc.
 
-3. **Andere spezielle Symbole:**  
+3. Andere spezielle Symbole:
 
     + `#` wird zu `%23`.  
     + `+` wird zu `%2B`.  
