@@ -14,7 +14,7 @@ Die BRE-Syntax ist relativ minimalistisch, mit mehreren Metazeichen und Konstruk
 
 ### Literale Zeichen
 
-Ein literales Zeichen ist einfach ein Zeichen, das sich selbst entspricht. Die meisten Zeichen werden als literale Zeichen behandelt, es sei denn, sie sind Metazeichen (z. B. `*`, `.`, `^`), die spezielle Bedeutungen haben. Um ein literales Metazeichen zu finden, müssen Sie es mit einem Rückwärtsschrägstrich (`\`) maskieren.
+Ein literales Zeichen ist einfach ein Zeichen, das sich selbst entspricht. Die meisten Zeichen werden als literale Zeichen behandelt, es sei denn, sie sind Metazeichen (z. B. `*`, `.`, `^`), die spezielle Bedeutungen haben. Um ein literales Metazeichen zu finden, musst Du es mit einem Rückwärtsschrägstrich (`\`) maskieren.
 
 Beispiel:
 
@@ -56,7 +56,7 @@ Beispiel:
 
 <h4>Übereinstimmung mit einem Zeichen aus einer Menge</h4>
 
-Klammerausdrücke `[]` (auch bekannt als Zeichenklassen) ermöglichen es Ihnen, eine Menge von Zeichen zu definieren, mit denen Sie an einer bestimmten Position in der Zeichenfolge übereinstimmen möchten.
+Mit Klammerausdrücken `[]` (auch als Zeichenklassen bekannt) kann eine Reihe von Zeichen definiert werden, die auf eine bestimmte Position in einer Zeichenkette passen sollen.
   
 Beispiele:
 
