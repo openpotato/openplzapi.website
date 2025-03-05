@@ -4,6 +4,14 @@ Der OpenPLZ API Web-Service ist [Open Source](https://github.com/openpotato/open
 
 Wir halten uns dabei weitestgehend an die Empfehlungen aus dem Community-Projekt [Keep a Changelog](https://keepachangelog.com/de).
 
+## 1.1.0 <small>_ 5. März 2025</small>
+
+**Geändert:**
+
++ Quelle für GV100AD aktualisiert
++ Abhängigkeiten aktualisiert
++ Kleinere Refactorings
+
 ## 1.0.0 <small>_ 16. Dezember 2024</small>
 
 **Hinzugefügt:** 
