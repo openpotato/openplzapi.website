@@ -152,7 +152,7 @@ For each municipality, the following attributes are provided:
     + `Große Kreisstadt` (large district town)
 + `postalCode (string)`: Postal code of the administrative seat (if multiple postal codes exist)
 + `multiplePostalCodes (bool)`: Does the municipality include more than one postal code?
-+ `association.key (string)`: Combination of the district regional code and the municipal association key (8-digit)
++ `association.key (string)`: Combination of the district regional code and the municipal association key (9-digit)
 + `association.name (string)`: Name of the municipal association
 + `district.key (string)`: District regional code (5-digit)
 + `district.name (string)`: Name of the district
@@ -187,7 +187,7 @@ Municipal associations can be queried through the following API endpoints:
 
 For each municipal association, the following attributes are provided:
 
-+ `key (string)`: Combination of the district regional code and the municipal association key (8-digit)
++ `key (string)`: Combination of the district regional code and the municipal association key (9-digit)
 + `name (string)`: Name of the municipal association
 + `type (string)`: Type of the municipal association. Possible values:
     + `Amt`

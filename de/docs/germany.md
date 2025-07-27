@@ -152,7 +152,7 @@ Pro Gemeinde werden folgende Attribute geliefert:
     + `Große Kreisstadt`
 + `postalCode (string)`: Postleitzahl des Verwaltungssitzes, falls mehrere Postleitzahlen vorhanden sind
 + `multiplePostalCodes (bool)`: Umfasst die Gemeinde mehr als eine Postleitzahl?
-+ `association.key (string)`: Kombination aus Regionalschlüssel des Kreises und Schlüssel des Gemeindenverbandes (8-stellig)
++ `association.key (string)`: Kombination aus Regionalschlüssel des Kreises und Schlüssel des Gemeindenverbandes (9-stellig)
 + `association.name (string)`: Name des Gemeindenverbandes
 + `district.key (string)`: Regionalschlüssel des Kreises (5-stellig)
 + `district.name (string)`: Name des Kreises
@@ -187,7 +187,7 @@ Die Abfrage der Gemeindenverbände erfolgt über folgende API-Endpunkte:
 
 Pro Gemeindeverband werden folgende Attribute geliefert:
 
-+ `key (string)`: Kombination aus Regionalschlüssel des Kreises und Schlüssel des Gemeindenverbandes (8-stellig)
++ `key (string)`: Kombination aus Regionalschlüssel des Kreises und Schlüssel des Gemeindenverbandes (9-stellig)
 + `name (string)`: Name des Gemeindenverbandes
 + `type (string)`: Kennzeichen des Gemeindenverbandes. Mögliche Werte:
     + `Amt`
