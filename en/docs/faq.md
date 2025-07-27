@@ -16,7 +16,7 @@ All data from the OpenPLZ API project comes from public sources and is documente
 
 ## How often is the data updated?
 
-The data of the OpenPLZ API project is updated regularly. We are currently aiming for quarterly updates. The current status of the data is always documented in the [change log](change-log.md).
+The data of the OpenPLZ API project is updated regularly. We are currently aiming for quarterly updates. The current status of the data is always documented in the [change log](change-log-data.md).
 
 ## I have found an error!
 
