@@ -125,15 +125,15 @@ Municipalities can be queried through the following API endpoints:
 
 !!! info ""
 
-    **`openplzapi.org/de/FederalStates/{stateCode}/Municipalites`**
+    **`openplzapi.org/de/FederalStates/{stateCode}/Municipalities`**
 
     :    List of all municipalities within a federal state. A state code (2-digit) is required as a parameter. The query is subject to [paging](paging.md).
 
-    **`openplzapi.org/de/GovernmentRegions/{regionCode}/Municipalites`**
+    **`openplzapi.org/de/GovernmentRegions/{regionCode}/Municipalities`**
 
     :    List of all municipalities within a government region. A region code (3-digit) is required as a parameter. The query is subject to [paging](paging.md).
 
-    **`openplzapi.org/de/Districts/{districtCode}/Municipalites`**
+    **`openplzapi.org/de/Districts/{districtCode}/Municipalities`**
 
     :    List of all municipalities within a district. A district code (5-digit) is required as a parameter. The query is subject to [paging](paging.md).
 
@@ -164,7 +164,7 @@ For each municipality, the following attributes are provided:
 Example request for municipalities in Rhineland-Palatinate (State Code: `07`):
 
 ```
-GET https://openplzapi.org/de/FederalStates/07/Municipalites	
+GET https://openplzapi.org/de/FederalStates/07/Municipalities	
 ```
 
 ## Requesting Municipal Associations

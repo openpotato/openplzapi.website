@@ -125,15 +125,15 @@ Die Abfrage der Gemeinden erfolgt über folgende API-Endpunkte:
 
 !!! info ""
 
-    **`openplzapi.org/de/FederalStates/{Bundeslandschlüssel}/Municipalites`**
+    **`openplzapi.org/de/FederalStates/{Bundeslandschlüssel}/Municipalities`**
 
     :    Liste aller Gemeinden in einem Bundesland. Als Parameter wird ein Bundeslandschlüssel (2-stellig) benötigt. Die Abfrage unterliegt einem [Paging](paging.md).
 
-    **`openplzapi.org/de/GovernmentRegions/{Bezirksschlüssel}/Municipalites`**
+    **`openplzapi.org/de/GovernmentRegions/{Bezirksschlüssel}/Municipalities`**
 
     :    Liste aller Gemeinden in einem Regierungsbezirk. Als Parameter wird ein Bezirksschlüssel (3-stellig) benötigt. Die Abfrage unterliegt einem [Paging](paging.md).
 
-    **`openplzapi.org/de/Districts/{Kreisschlüssel}/Municipalites`**
+    **`openplzapi.org/de/Districts/{Kreisschlüssel}/Municipalities`**
 
     :    Liste aller Gemeinden in einen Kreis. Als Parameter wird ein Kreisschlüssel (5-stellig) benötigt. Die Abfrage unterliegt einem [Paging](paging.md).
 
@@ -164,7 +164,7 @@ Pro Gemeinde werden folgende Attribute geliefert:
 Hier eine Beispielabfrage für die Liste der Gemeinden in Rheinland-Pfalz (Bundeslandschlüssel: `07`): 
 
 ```
-GET https://openplzapi.org/de/FederalStates/07/Municipalites	
+GET https://openplzapi.org/de/FederalStates/07/Municipalities	
 ```
 
 ## Abfrage Gemeindenverbände
