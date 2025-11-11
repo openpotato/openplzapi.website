@@ -76,11 +76,11 @@ Die Abfrage der Gemeinden erfolgt über folgende API-Endpunkte:
 
 !!! info ""
 
-    **`openplzapi.org/at/FederalProvinces/{Bundeslandkennziffer}/Municipalites`**
+    **`openplzapi.org/at/FederalProvinces/{Bundeslandkennziffer}/Municipalities`**
 
     :    Liste aller Gemeinden in einem Bundesland. Als Parameter wird die Bundeslandkennziffer (1-stellig) benötigt. Die Abfrage unterliegt einem [Paging](paging.md).
 
-    **`openplzapi.org/at/Districts/{Bezirksschlüssel}/Municipalites`**
+    **`openplzapi.org/at/Districts/{Bezirksschlüssel}/Municipalities`**
 
     :    Liste aller Gemeinden in einem Bezirk. Als Parameter wird die Bezirkskennziffer **oder** die Bezirkscodierung (beide 3-stellig) benötigt. Die Abfrage unterliegt einem [Paging](paging.md).
 
