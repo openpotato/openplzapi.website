@@ -4,47 +4,53 @@ The OpenPLZ API Web Service is [Open Source](https://github.com/openpotato/openp
 
 We largely adhere to the recommendations from the community project [Keep a Changelog](https://keepachangelog.com).
 
+## 1.3.0 <small>_ December 11, 2025</small>
+
+**Changed:**
+
++ Update to .NET 10.
+
 ## 1.2.1 <small>_ November 11, 2025</small>
 
 **Changed:**
 
-+ Updated source for GV100AD
-+ Updated dependencies
++ Updated source for GV100AD.
++ Updated dependencies.
 
 ## 1.2.0 <small>_ July 30, 2025</small>
 
 **Changed:**
 
-+ Updated source for GV100AD
-+ Updated dependencies
++ Updated source for GV100AD.
++ Updated dependencies.
 
 ## 1.1.0 <small>_ March 05, 2025</small>
 
 **Changed:**
 
-+ Updated source for GV100AD
-+ Updated dependencies
-+ Minor refactorings
++ Updated source for GV100AD.
++ Updated dependencies.
++ Minor refactorings.
 
 ## 1.0.0 <small>_ December 16, 2024</small>
 
 **Added:** 
 
-+ Added HTTP Access-Control-Expose-Headers response header
++ Added HTTP Access-Control-Expose-Headers response header.
 
 **Changed:**
 
-+ Breaking API change: Missing paging endpoint for `at/Districts/{key}/Localities`
++ Breaking API change: Missing paging endpoint for `at/Districts/{key}/Localities`.
 
 **Fixed:**
 
-+ Bug fix for Swiss CSV response format
++ Bug fix for Swiss CSV response format.
 
 ## 0.1.0 <small>_ December 02, 2024</small>
 
 **Changed:**
 
-+ Update to .NET 9
++ Update to .NET 9.
 + Breaking API change: Communes, districts and cantons for Switzerland have now all been given the properties `HistoricalCode` and `ShortName`. The `Code` property for cantons has been removed.
 + Refactoring of the source for the Swiss commune directory. The API of the Federal Statistical Office (FSO) is now accessed directly.
 
@@ -75,18 +81,18 @@ We largely adhere to the recommendations from the community project [Keep a Chan
 
 **Added:** 
 
-+ New API endpoints for `Locality` entities
-+ Paging for nearly all API endpoints
++ New API endpoints for `Locality` entities.
++ Paging for nearly all API endpoints.
 
 **Changed:**
 
-+ Update to .NET 8
++ Update to .NET 8.
 
 ## 0.0.3 <small>_ September 27, 2023</small>
 
 **Added:** 
 
-+ CSV as additional output format
++ CSV as additional output format.
 
 **Changed:**
 
@@ -101,4 +107,4 @@ We largely adhere to the recommendations from the community project [Keep a Chan
 
 ## 0.0.1 <small>_ December 09, 2022</small>
 
-First publication
+First publication.
